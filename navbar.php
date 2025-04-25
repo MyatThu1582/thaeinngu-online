@@ -2,7 +2,7 @@
    include 'resource/links.php';
 ?>
 <div id="topsection"></div>
-  <div class="d-flex ps-5 pe-5 text-light bg-brown" style="position:sticky; top:0px; z-index:9999;">
+  <div class="d-flex ps-5 pe-5 text-light bg-brown headerdiv" style="position:sticky; top:0px; z-index:9999;">
     <div class="col-3 ps-5 ms-4 header">
       <span class="header-text">သဲအင်း</span>
     </div>
@@ -15,7 +15,23 @@
   </div>
 <div class="" style="box-shadow: 0px 8px 16px 0px rgba(94,0,0,0.5); background-color: white;">
   <div class="container d-flex nab-bar">
-    <div class="col-4">
+  <div class="dropdown">
+    <button class="btn btn-sm text-dark menubtn" style="border:none !important;" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+        <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+      </svg>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+  </div>
+  <div class="menudivforresponsive">
+    Hello World
+  </div>
+
+  <div class="col-4 maintitlecontainer">
     <?php
       $link = $_SERVER['PHP_SELF'];
       $linkary = explode('/',$link);
@@ -31,7 +47,7 @@
       }
     ?>
     </div>
-    <div class="col-7">
+    <div class="col-7 menucontainer">
       <?php
       if ($page == 'index.php' || $page == 'login.php' || $page == 'register.php') {
       ?>
@@ -107,8 +123,8 @@
   }
     ?>
     </div>
-    <div class="col-2">
-      <img src="/image/buddha2.png" alt="" width="80%" height="80%">
+    <div class="col-2 buddhacontainer">
+      <img src="image/buddha2.png" alt="" width="80%" height="80%">
     </div>
   </div>
 </div>

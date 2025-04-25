@@ -326,15 +326,6 @@ audio {
     overflow: hidden;
   }
 
-
-
-
-
-
-
-
-
-
 /* For footer */
 .footer{
   /* height:380px; */
@@ -354,6 +345,62 @@ audio {
   display: block;
   color: white;
   margin-bottom: 6px;
+}
+.menubtn{
+  display: none;
+}
+/* .dropdown-menu{
+  transition: 0.5s;
+  margin-left: -210px !important;
+} */
+.menudivforresponsive{
+  display: none;
+  position: absolute;
+  width: 100%;
+  margin-top: -20px !important;
+  background-color: white;
+}
+
+/* for responsive */
+@media screen and (max-width:800px){
+  .toshow{
+    display: block !important;
+  }
+  .headerdiv{
+    padding: 0px !important;
+  }
+  .header{
+    margin: 0px !important;
+  }
+  .header-text{
+    font-size: 15px;
+  }
+  .menucontainer{
+    display: none !important;
+  }
+  .maintitlecontainer{
+    width: 55% !important;
+    /* background-color: red; */
+    padding: 15px 0px;
+  }
+  .buddhacontainer{
+    width: 28% !important; 
+    text-align: center;
+    /* background-color: blue; */
+  }
+  .menubtn{
+    display: block;
+    margin-left: 30px;
+  }
+  .main-title{
+    font-size: 37px;
+  }
+  .sub-title{
+    font-size: 13px;
+  }
+  .menudivforresponsive{
+    display: block;
+  }
 }
 </style>
 <body>
