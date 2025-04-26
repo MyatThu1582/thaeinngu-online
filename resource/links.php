@@ -162,6 +162,7 @@
 }
 .bio{
   text-align: justify;
+  /* text-indent: 50px; */
 }
 .speech{
   height: 200px;
