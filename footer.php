@@ -158,4 +158,21 @@ biobtn4.addEventListener('click',function(){
   biobtn4.classList.add('none-bg');
 })
 
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     const menuBtn = document.getElementById('menuToggleBtn');
+//     const menuDrawer = document.getElementById('menuDrawer');
+
+//     menuBtn.addEventListener('click', () => {
+//       menuDrawer.classList.toggle('active');
+//     });
+
+//     // Optional: Close menu when clicking outside
+//     document.addEventListener('click', function (e) {
+//       if (!menuDrawer.contains(e.target) && !menuBtn.contains(e.target)) {
+//         menuDrawer.classList.remove('active');
+//       }
+//     });
+//   });
+
 </script>

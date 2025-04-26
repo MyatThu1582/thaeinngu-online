@@ -3,7 +3,7 @@
 <div class="home d-flex ps-5">
   <div class="col-3 mt-5 ms-5 ps-5">
     <div class="sayardawimg mt-4">
-      <img src="sayardaw/4.png" alt="" width="100%" class="rounded-3">
+      <img src="sayardaw/4.png" alt="" width="100%" class="">
     </div><br>
     <span class="bold">မူလသဲအင်းဂူဆရာတော်ဘုရားကြီး</span>
     <span class="text-brown bold">ဦးဥက္ကဌ</span>
@@ -25,21 +25,21 @@
 <div class="bio container d-flex">
   <div class="col-6">
     <div class="pe-5">
-      <video src="/image/video.mp4" class="bio_video" controls></video>
+      <video src="image/video.mp4" class="bio_video" controls></video>
     </div>
   </div>
   <div class="col-6">
-    <div class="">
-      <h5 class="text-brown bold">ငယ်စဥ်ဘဝဖြတ်သန်းပုံ</h5>
-      <p>Theinngu refers to both a meditation tradition and the monastery that upholds it, located in Hmawbi, Myanmar. It is known for its strict yet powerful approach to Vipassanā meditation, emphasizing stillness, strong mindfulness, and deep insight into the nature of the mind and body.....</p>
+    <div class="mb-4">
+      <h5 class="text-brown myanmar-text">ငယ်စဥ်ဘဝ</h5>
+      <p class="">သဲအင်းဂူဆရာတော် အလောင်းအလျာ မောင်အောင်ထွန်းအား မှော်ဘီမြို့နယ် နှောကုန်းကျေးရွာနေ၊ (အညာသား) ဓါတ်ဗိန္ဓောဆရာ ဦးသော်တာနှင့် အညာဇာတိနှောကုန်းသူဒေါ်မယ်အံ့တို့မှ ၁၂၇၄ ခုနှစ် တပေါင်းလဆန်း၁၀ရက်(တနင်္ဂနွေနေ့) ခရစ်သက္ကရာဇ် ၁၉၁၃ခုနှစ် မတ်လ(၁၆)ရက်နေ့ နံနက်၈နာရီခန့်အချိန်တွင် နှောကုန်းကျေးရွာ၌ မီးရှူးသန့်စင်ဖွားမြင်တော်မူသည်။ မှော်ဘီမြို့နှင့် (၅)မိုင် ကျော်ကွာဝေးသော နှောကုန်းကျေးရွာတွင် ကြီးပြင်း ....</p>
+    </div>
+    <div class="mb-4">
+      <h5 class="text-brown myanmar-text">ဘဝသံသရာ</h5>
+      <p class="">နှောကုန်းကျေးရွာတွင် လူငယ်ဘဝကာလသားများဖြစ်ကြသော အေးမောင်၊ အောင်ရင်၊ အောင်ထွန်းသူငယ်ချင်းသုံးယောက်တို့သည် ကျေးရွာအတွင်းစိတ်တူကိုယ်တူပေါင်းသင်း ....</p>
     </div>
     <div class="">
-      <h5 class="text-brown bold">ဘဝအဆင့်ဆင့်</h5>
-      <p>Theinngu Monastery is located in Hmawbi Township, north of Yangon, Myanmar.....</p>
-    </div>
-    <div class="">
-      <h5 class="text-brown bold">ရဟန်းဝတ်ခြင်းနှင့် ရဟန်းဘဝရောက်ရှိခြင်း</h5>
-      <p>Sayadaw U Ukkaṭṭha founded the Theinngu meditation tradition, teaching deep mindfulness through stillness and discipline. His legacy lives on at Theinngu Monastery......</p>
+      <h5 class="text-brown myanmar-text">သံဝေဂတရားရရှိခြင်း</h5>
+      <p class="">ဒုစရိုက်လုပ်ငန်းများကို ဦးအောင်ထွန်းအနေဖြင့် လုပ်နေစေကာမူ စွန်းလွန်းဆရာတော်၏ထေရုပ္ပတ္တိအား ဖတ်ရှု့ပြီးနောက် စွန်းလွန်းဆရာတော်ကဲ့သို့ ကျင့်ကြံလိုသောစိတ်ကလွှမ်းမိုးနေပါသည်။ သို့ရာတွင် ဦးအောင်ထွန်းမှာ ဇနီးသည် နှစ်ယောက်နှင့်မိသားစုများ စားဝတ်နေ ....</p>
     </div>
     <a href="view/bio.php" class="btn btn-default mt-3 bg-brown viewmorebtn float-end" type="button">See More</a>
   </div>
@@ -52,15 +52,15 @@
     <div class="">
     <h3>Introduction To Thaeinngu</h3>
     <p class="title-underline"></p>
-      <h5 class="text-brown bold">သဲအင်းဂူဆိုတာဘာလဲ ?</h5>
+      <h5 class="text-brown bold myanmar-text mt-2">သဲအင်းဂူဆိုတာဘာလဲ ?</h5>
       <p style="text-align: justify;">ရန်ကုန်မြို့၏အပြင်ဘက်ရှိ မှော်ဘီမြို့နယ် အေးချမ်းသာယာမြို့နယ်တွင် တည်ရှိသော သဲအင်းဂူကျောင်းတိုက်သည် မြန်မာနိုင်ငံတွင် အနုမောဒနာပြု ဝိပဿနာကျင့်စဉ်နှင့် ဓမ္မဝိနယ၏ မီးရှူးတန်ဆောင်တစ်ခုဖြစ်သည်။ ဆရာတော် ဦးဥက္ခဌ၏ လမ်းညွှန်မှုဖြင့် တည်ထောင်ထားသော ....</p>
     </div>
-    <div class="">
-      <h5 class="text-brown bold">ဘယ်မှာရှိသလဲ ?</h5>
+    <div class="mt-4">
+      <h5 class="text-brown bold myanmar-text">ဘယ်မှာရှိသလဲ ?</h5>
       <p style="text-align: justify;">သဲအင်းဂူကျောင်းတိုက်သည် မြန်မာနိုင်ငံ မြောက်ဘက် မှော်ဘီမြို့နယ်တွင် တည်ရှိသည်။ ဤနေရာသည် ၎င်း၏ အေးချမ်းသာယာသော ကျေးလက်လေထုကြောင့် ....</p>
     </div>
-    <div class="">
-      <h5 class="text-brown bold">ဘယ်သူ တည်ထောင်ခဲ့သလဲ ?</h5>
+    <div class="mt-4">
+      <h5 class="text-brown bold myanmar-text">ဘယ်သူ တည်ထောင်ခဲ့သလဲ ?</h5>
       <p style="text-align: justify;">သဲအင်းဂူဆရာတော် ဦးဥက္ခဌ (၁၉၁၃-၁၉၇၃) သည် သဲအင်းဂူဝိပဿနာ အစဉ်အလာကို တည်ထောင်သူဖြစ်ပြီး မြန်မာလူမျိုး အလွန်လေးစားထိုက်သူဖြစ်သည်။ မယိမ်းမယိုင်သော စည်းကမ်းနှင့် လေးနက်သော သဘောဖြင့် လူသိများသော ဆရာတော် ဦးဥက္ခဌသည် ပြင်းပြသော ....</p>
     </div>
     <a href="view/intro.php" class="btn btn-default mt-3 bg-brown viewmorebtn" type="button">See More</a>
@@ -139,4 +139,4 @@
   </div>
 </div>
 <!-- activity -->
-<?php// include 'footer.php'; ?>
+<?php include 'footer.php'; ?>

@@ -25,11 +25,20 @@
    <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Noto+Serif+Myanmar:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Myanmar:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
 </head>
 <style>
 *{
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
+  font-style: normal;
+}
+.myanmar-text{
+  font-family: "Noto Serif Myanmar", serif;
+  font-weight: 700;
   font-style: normal;
 }
 .hide{
@@ -188,7 +197,7 @@
   box-shadow: 0px 9px 18px 0px rgba(94,0,0,0.3);
 }
 .biolinks{
-  padding: 15px 44.8px;
+  padding: 15px 38.4px;
   border: none;
   background-color: transparent;
   transition: 0.1s;
@@ -322,7 +331,7 @@ audio {
   }
   .sayardawimg{
     /* border: 5px double rgb(94,0,0); */
-    border-radius: 15%;
+    border-radius: 10%;
     overflow: hidden;
   }
 
@@ -353,13 +362,48 @@ audio {
   transition: 0.5s;
   margin-left: -210px !important;
 } */
-.menudivforresponsive{
+/* .menudivforresponsive{
   display: none;
   position: absolute;
   width: 100%;
   margin-top: -20px !important;
   background-color: white;
-}
+} */
+.menudivforresponsive {
+    position: fixed;
+    top: 0;
+    left: -250px; /* off screen initially */
+    width: 250px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+    transition: left 0.3s ease-in-out;
+    z-index: 1050;
+    padding: 1rem;
+  }
+
+  .menudivforresponsive.active {
+    left: 0;
+  }
+
+  .menudivforresponsive ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .menudivforresponsive li {
+    margin: 1rem 0;
+  }
+
+  .menudivforresponsive a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+
+
+
 
 /* for responsive */
 @media screen and (max-width:800px){
