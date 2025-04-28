@@ -17,7 +17,7 @@
   }else{
     ?>
     <link rel="stylesheet" href="../boostrap/css/bootstrap.css">
-    <script src="../boostrap/js/bootstrap.min.js" charset="utf-8"></script>
+    <!-- <script src="../boostrap/js/bootstrap.min.js" charset="utf-8"></script> -->
     <script src="../boostrap/js/bootstrap.bundle.js" charset="utf-8"></script>
     <?php
   }
@@ -493,6 +493,14 @@ audio {
     width: 70%;
     margin-left: 20px;
   }
+  .bio1{
+    padding: 0px 30px !important;
+  }
+  .bio3{
+    margin-top: 100px !important;
+    padding: 0px !important;
+  }
+  
 }
 </style>
 <body>

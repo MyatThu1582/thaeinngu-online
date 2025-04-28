@@ -11,8 +11,8 @@
 </div>
 
   <div class="container">
-  <div class="d-flex pt-5 pb-5 mt-5 mb-5">
-      <div class="col-4 full" style="height:480px;">
+  <div class="pt-5 pb-5 mt-5 mb-5 row bio1">
+      <div class="col-4 full bio2" style="height:480px;">
         <div class="title mb-4">
           <h2 class="text-dark mb-3">အရှင်ဦးဥက္ကဌ</h2>
           <span class="text-brown h5 mb-1 italic">ကျေးဇူးတော်ရှင်မူလသဲအင်းဂူဆရာတော်</span>
@@ -23,7 +23,7 @@
         <img src="/image/sayardaw3.jpg" class="hide" alt="" id="sayardaw3" width="100%" height="100%" style="object-fit:cover;">
         <img src="/image/sayardaw2.jpg" class="hide" alt="" id="sayardaw4" width="100%" height="100%" style="object-fit:cover;">
       </div>
-      <div class="col-8 ps-5">
+      <div class="col-8 ps-5 full bio3">
         <div class="btns mb-4 mt-4">
           <button type="button" name="button" class="biolinks" id="btn1">ငယ်စဥ်ဘဝ</button>
           <button type="button" name="button" class="biolinks" id="btn2">ဘဝသံသရာ</button>
@@ -137,6 +137,6 @@
         </div>
       </div>
   </div>
-</div>
+  </div>
 <br><br><br>
 <?php include '../footer.php'; ?>
