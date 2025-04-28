@@ -15,26 +15,14 @@
   </div>
 <div class="" style="box-shadow: 0px 8px 16px 0px rgba(94,0,0,0.5); background-color: white;">
   <div class="container d-flex nab-bar">
-  <div class="dropdown">
-  <button class="btn btn-sm text-dark menubtn" id="menuToggleBtn" style="border: none !important;" type="button">
-    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
-      <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
-    </svg>
-  </button>
 
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-      <li><a class="dropdown-item" href="#">Action</a></li>
-      <li><a class="dropdown-item" href="#">Another action</a></li>
-      <li><a class="dropdown-item" href="#">Something else here</a></li>
-    </ul>
-  </div>
-  <div class="menudivforresponsive" id="menuDrawer">
-  <ul>
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-  </ul>
-</div>
+  <button class="btn btn-sm text-dark menubtn dropend" id="menuToggleBtn" style="border: none !important;" type="button"
+      data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-three-dots-vertical"
+          viewBox="0 0 16 16">
+          <path d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0"/>
+      </svg>
+  </button>
 
 
   <div class="col-4 maintitlecontainer">
@@ -141,3 +129,76 @@
     </svg>
   </a>
 </div>
+
+
+<!-- for responsive -->
+<div class="collapse p-3 text-light" id="collapseExample" style="position: absolute; background-color: rgb(94,0,0); width: 100%;">
+  <?php 
+    if ($page == 'index.php' || $page == 'login.php' || $page == 'register.php') {
+  ?>
+  <div class="dropdown">
+    <span class="dropbtn text-light link">About Us</span>
+    <div class="dropdown-content mt-1" style="position: absolute; left: 68px; top: -5px;">
+      <a href="view/intro.php" class="sub-links">Introduction</a>
+      <a href="view/bio.php" class="sub-links">Biography</a>
+      <a href="view/" class="sub-links">Orgnization of Us</a>
+    </div>
+  </div><hr>
+
+  <div class="dropdown">
+    <span class="dropbtn text-light link">Resources</span>
+    <div class="dropdown-content mt-1" style="position: absolute; left: 75px; top: -5px;">
+      <a href="view/tayardaw.php" class="sub-links">တရားတော်များ</a>
+      <a href="view/book.php" class="sub-links">စာအုပ်များ</a>
+    </div>
+  </div><hr>
+
+  <a class="text-light link" href="view/announcement.php">Announcement</a><hr>
+
+  <div class="dropdown">
+    <span class="dropbtn text-light link">Activity</span>
+    <div class="dropdown-content mt-1" style="position: absolute; left: 57px; top: -5px;">
+      <a href="view/gallery.php" class="sub-links">Gallery</a>
+      <a href="view/activity.php" class="sub-links">Activity</a>
+    </div>
+  </div><hr>
+
+  <a class="text-light link" href="view/donate.php">Donate</a><hr>
+  <a class="text-light link" href="view/contact.php">Contact</a>
+  <?php
+    }else{
+      ?>
+    <div class="dropdown">
+      <span class="dropbtn text-light link">About Us</span>
+      <div class="dropdown-content mt-1" style="position: absolute; left: 68px; top: -5px;">
+        <a href="intro.php" class="sub-links">Introduction</a>
+        <a href="bio.php" class="sub-links">Biography</a>
+        <a href="#" class="sub-links">Orgnization of Us</a>
+      </div>
+    </div><hr>
+
+    <div class="dropdown">
+      <span class="dropbtn text-light link">Resources</span>
+      <div class="dropdown-content mt-1" style="position: absolute; left: 75px; top: -5px;">
+        <a href="tayardaw.php" class="sub-links">တရားတော်များ</a>
+        <a href="book.php" class="sub-links">စာအုပ်များ</a>
+      </div>
+    </div><hr>
+
+    <a class="text-light link" href="announcement.php">Announcement</a><hr>
+
+    <div class="dropdown">
+      <span class="dropbtn text-light link">Activity</span>
+      <div class="dropdown-content mt-1" style="position: absolute; left: 57px; top: -5px;">
+        <a href="gallery.php" class="sub-links">Gallery</a>
+        <a href="activity.php" class="sub-links">Activity</a>
+      </div>
+    </div><hr>
+
+    <a class="text-light link" href="donate.php">Donate</a><hr>
+    <a class="text-light link" href="contact.php">Contact</a>
+      <?php
+    }
+  ?>
+</div>
+
