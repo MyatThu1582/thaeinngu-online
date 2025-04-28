@@ -11,7 +11,7 @@
   if ($page == 'index.php' || $page == 'login.php' || $page == 'register.php') {
     ?>
     <link rel="stylesheet" href="boostrap/css/bootstrap.css">
-    <script src="boostrap/js/bootstrap.min.js" charset="utf-8"></script>
+    <!-- <script src="boostrap/js/bootstrap.min.js" charset="utf-8"></script> -->
     <script src="boostrap/js/bootstrap.bundle.js" charset="utf-8"></script>
     <?php
   }else{
@@ -119,6 +119,9 @@
 
 .sub-links{
   font-size: 15px;
+}
+.sub-links:hover{
+  background-color: lightgrey;
 }
 .dropdown {
   cursor: pointer;
@@ -449,6 +452,7 @@ audio {
   .menudivforresponsive{
     display: block;
   }
+
   .bannar{
     /* margin: 0px !important; */
     width: 425px !important;
@@ -473,6 +477,21 @@ audio {
   }
   .purpose2{
     margin: 0px !important;
+  }
+  .home{
+    height: 450px;
+    padding: 0px !important;
+  }
+  .sayardaw{
+    width: 35%;
+    text-align: center;
+    background-color: red;
+    margin: 40px 10px !important;
+    padding: 0px !important;
+  }
+  .sayardawimg{
+    width: 70%;
+    margin-left: 20px;
   }
 }
 </style>
