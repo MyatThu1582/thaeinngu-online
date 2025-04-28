@@ -49,7 +49,7 @@ $audio_page_data = array_slice($audio_datas, $start, $per_page);
 
 <div class="container mt-5 bannar pt-5" style="height:200px;">
   <div class="float-end">
-    <h2 class="mt-5 pt-0">တရားတော် အသံဖိုင်များ</h2>
+    <h2 class="mt-5 pt-0">အသံဖိုင်များ</h2>
     <a href="../index.php" class="link text-brown">Home</a>
     <svg class="bi bi-arrow-right-short text-brown" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
       <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
@@ -58,7 +58,7 @@ $audio_page_data = array_slice($audio_datas, $start, $per_page);
     <svg class="bi bi-arrow-right-short text-brown" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
       <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
     </svg>
-    <a href="audios.php" class="link text-brown">တရားတော်များ အသံဖိုင်များ</a>
+    <a href="audios.php" class="link text-brown">အသံဖိုင်များ</a>
   </div>
 </div>
 

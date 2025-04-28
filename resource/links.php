@@ -155,7 +155,7 @@
   padding-left: 20px;
 }
 .bannar{
-  background-image: url('/image/bannar2.png');
+  background-image: url('../image/bannar2.png');
   background-repeat: no-repeat;
   /* background-size: cover; */
   /* background-position: 100% 50%; */
@@ -411,6 +411,9 @@ audio {
   .toshow{
     display: block !important;
   }
+  .full{
+    width: 100% !important;
+  }
   .headerdiv{
     padding: 0px !important;
   }
@@ -445,6 +448,31 @@ audio {
   }
   .menudivforresponsive{
     display: block;
+  }
+  .bannar{
+    /* margin: 0px !important; */
+    width: 425px !important;
+    margin: 30px !important;
+  }
+  .intro{
+    padding: 20px;
+  }
+  .intro1{
+    margin-top: -30px;
+    margin-bottom: 30px;
+  }
+  .intro2{
+    padding: 20px !important;
+  }
+  .pricinple{
+    padding: 40px !important;
+    margin-top: -50px !important;
+  }
+  .purpose{
+    margin: 30px auto !important;
+  }
+  .purpose2{
+    margin: 0px !important;
   }
 }
 </style>
