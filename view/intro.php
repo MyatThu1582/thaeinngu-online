@@ -18,7 +18,7 @@
         <span class="text-brown h5 mb-1 italic">ဝိပဿနာ ကမ္မဌာန်းကျောင်းတိုက်</span>
       </div>
       <p class="title-underline"></p>
-      <img src="../image/introduction.jpg" alt="" width="100%" class="" style="object-fit:cover;">
+      <img src="/image/introduction.jpg" alt="" width="100%" class="" style="object-fit:cover;">
       <div class="pt-4 text-center">
         <span class="text-brown h6 mb-1 italic">မူလသဲအင်းဂူဆရာတော်ဘုရားကြီး <br>အုပ်မြစ်ချတည်ထောင်ခဲ့သော <span>အရိယာ ဓမ္မဗိမာန်တော်ကြီး</span></span>
       </div>

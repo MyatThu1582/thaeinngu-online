@@ -12,93 +12,111 @@
 
 <!-- To Limit the length of the text on the image -->
 
-<div class="container mt-5 mb-5 pb-5 pt-5">
-  <h3>Our Latest Activities</h3>
-  <p class="title-underline"></p>
-  <div class="d-flex">
-    <div class="activity">
-        <img src="/image/activity5.jpg" alt="" class="actimg" width="100%" height="70%" style="object-fit:cover;">
-        <div class="text-light" style="margin-top:-180px; margin-left:20px;">
-          <div class="d-flex bg-success" style="align-items: flex-end; height:150px;">
-            <span style="font-size:20px; display: block;">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</span>
+<div class="container mt-5 pt-5">
+  <div class="activitytitle">
+    <h3>Our Latest Activities</h3>
+    <p class="title-underline"></p>
+  </div>
+  <div class="row activitycontainer">
+    <div class="col-4 p-3 full">
+      <div class="activity">
+          <img src="/image/activity5.jpg" alt="" class="actimg" width="100%" height="70%" style="object-fit:cover;">
+          <div class="text-light" style="margin-top:-180px; margin-left:20px;">
+            <div class="d-flex" style="align-items: flex-end; height:150px;">
+              <span style="font-size:20px; display: block;">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</span>
+            </div>
+            <span style="font-size:15px;">12 days ago</span>
           </div>
-          <span style="font-size:15px;">12 days ago</span>
+          <div class="p-3">
+            <span style="font-size:15px;">Lorem ipsum dolor sit amet, consect sed do eiu oop osmod tempor incididunt</span>
+            <a href="view/activity_detail.php" class="text-brown d-block link" style="text-align:right;">More Details</a>
+          </div>
+      </div>
+    </div>
+    <div class="col-4 p-3 full">
+      <div class="activity">
+        <img src="/image/activity4.jpg" alt="" class="actimg" width="100%" height="70%" style="object-fit:cover;">
+        <div class="text-light" style="margin-top:-130px; margin-left:20px;">
+          <div class="d-flex" style="height:100px; align-items: flex-end;">
+            <span style="font-size:20px;">isicing elit, sed do eiusmod tempor incididunt ut labore et dolore</span>
+          </div>
+          <span style="font-size:15px;">28 days ago</span>
         </div>
         <div class="p-3">
-          <span style="font-size:15px;">Lorem ipsum dolor sit amet, consect sed do eiu oop osmod tempor incididunt</span>
-          <a href="activity_detail.php" class="text-brown d-block link" style="text-align:right;">More Details</a>
+          <span style="font-size:15px;">nsectetur adipisicing elit, sed t esse cillum dolore eu fugia</span>
+          <a href="view/activity_detail.php" class="text-brown d-block link" style="text-align:right;">More Details</a>
         </div>
-    </div>
-    <div class="ms-4 me-4 activity">
-      <img src="/image/activity4.jpg" alt="" class="actimg" width="100%" height="70%" style="object-fit:cover;">
-      <div class="text-light" style="margin-top:-130px; margin-left:20px;">
-        <div class="d-flex" style="height:100px; align-items: flex-end;">
-          <span style="font-size:20px;">isicing elit, sed do eiusmod tempor incididunt ut labore et dolore</span>
-        </div>
-        <span style="font-size:15px;">28 days ago</span>
-      </div>
-      <div class="p-3">
-        <span style="font-size:15px;">nsectetur adipisicing elit, sed t esse cillum dolore eu fugia</span>
-        <a href="activity_detail.php" class="text-brown d-block link" style="text-align:right;">More Details</a>
       </div>
     </div>
-    <div class="activity">
-      <img src="/image/activity.jpg" alt="" class="actimg" width="100%" height="70%" style="object-fit:cover;">
-      <div class="text-light" style="margin-top:-130px; margin-left:20px;">
-        <div class="d-flex" style="height:100px; align-items: flex-end;">
-          <span style="font-size:20px;">lorefn kfsdkff isicing elit, sed do eiusmod tempor after  incididunt ut labore et dolore</span>
+    <div class="col-4 p-3 full">
+      <div class="activity">
+        <img src="/image/activity.jpg" alt="" class="actimg" width="100%" height="70%" style="object-fit:cover;">
+        <div class="text-light" style="margin-top:-130px; margin-left:20px;">
+          <div class="d-flex" style="height:100px; align-items: flex-end;">
+            <span style="font-size:20px;">lorefn kfsdkff isicing elit, sed do eiusmod tempor after  incididunt ut labore et dolore</span>
+          </div>
+          <span style="font-size:15px;">1 month & 3 days ago</span>
         </div>
-        <span style="font-size:15px;">1 month & 3 days ago</span>
+        <div class="p-3">
+          <span style="font-size:15px;">Lorielit esse cillum dolore eu fugia</span>
+          <a href="view/activity_detail.php" class="text-brown d-block link" style="text-align:right;">More Details</a>
+        </div>
       </div>
-      <div class="p-3">
-        <span style="font-size:15px;">Lorielit esse cillum dolore eu fugia</span>
-        <a href="activity_detail.php" class="text-brown d-block link" style="text-align:right;">More Details</a>
+    </div>
+</div>
+</div>
+
+<div class="container mb-5 pb-5">
+  <div class="row activitycontainer">
+    <div class="col-4 p-3 full">
+      <div class="activity">
+          <img src="/image/activity5.jpg" alt="" class="actimg" width="100%" height="70%" style="object-fit:cover;">
+          <div class="text-light" style="margin-top:-180px; margin-left:20px;">
+            <div class="d-flex" style="align-items: flex-end; height:150px;">
+              <span style="font-size:20px; display: block;">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</span>
+            </div>
+            <span style="font-size:15px;">12 days ago</span>
+          </div>
+          <div class="p-3">
+            <span style="font-size:15px;">Lorem ipsum dolor sit amet, consect sed do eiu oop osmod tempor incididunt</span>
+            <a href="view/activity_detail.php" class="text-brown d-block link" style="text-align:right;">More Details</a>
+          </div>
+      </div>
+    </div>
+    <div class="col-4 p-3 full">
+      <div class="activity">
+        <img src="/image/activity4.jpg" alt="" class="actimg" width="100%" height="70%" style="object-fit:cover;">
+        <div class="text-light" style="margin-top:-130px; margin-left:20px;">
+          <div class="d-flex" style="height:100px; align-items: flex-end;">
+            <span style="font-size:20px;">isicing elit, sed do eiusmod tempor incididunt ut labore et dolore</span>
+          </div>
+          <span style="font-size:15px;">28 days ago</span>
+        </div>
+        <div class="p-3">
+          <span style="font-size:15px;">nsectetur adipisicing elit, sed t esse cillum dolore eu fugia</span>
+          <a href="view/activity_detail.php" class="text-brown d-block link" style="text-align:right;">More Details</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-4 p-3 full">
+      <div class="activity">
+        <img src="/image/activity.jpg" alt="" class="actimg" width="100%" height="70%" style="object-fit:cover;">
+        <div class="text-light" style="margin-top:-130px; margin-left:20px;">
+          <div class="d-flex" style="height:100px; align-items: flex-end;">
+            <span style="font-size:20px;">lorefn kfsdkff isicing elit, sed do eiusmod tempor after  incididunt ut labore et dolore</span>
+          </div>
+          <span style="font-size:15px;">1 month & 3 days ago</span>
+        </div>
+        <div class="p-3">
+          <span style="font-size:15px;">Lorielit esse cillum dolore eu fugia</span>
+          <a href="view/activity_detail.php" class="text-brown d-block link" style="text-align:right;">More Details</a>
+        </div>
       </div>
     </div>
   </div>
-
-  <div class="d-flex mt-5">
-    <div class="activity">
-        <img src="/image/activity5.jpg" alt="" class="actimg" width="100%" height="70%" style="object-fit:cover;">
-        <div class="text-light" style="margin-top:-180px; margin-left:20px;">
-          <div class="d-flex bg-success" style="align-items: flex-end; height:150px;">
-            <span style="font-size:20px; display: block;">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</span>
-          </div>
-          <span style="font-size:15px;">12 days ago</span>
-        </div>
-        <div class="p-3">
-          <span style="font-size:15px;">Lorem ipsum dolor sit amet, consect sed do eiu oop osmod tempor incididunt</span>
-          <a href="activity_detail.php" class="text-brown d-block link" style="text-align:right;">More Details</a>
-        </div>
-    </div>
-    <div class="ms-4 me-4 activity">
-      <img src="/image/activity4.jpg" alt="" class="actimg" width="100%" height="70%" style="object-fit:cover;">
-      <div class="text-light" style="margin-top:-130px; margin-left:20px;">
-        <div class="d-flex" style="height:100px; align-items: flex-end;">
-          <span style="font-size:20px;">isicing elit, sed do eiusmod tempor incididunt ut labore et dolore</span>
-        </div>
-        <span style="font-size:15px;">28 days ago</span>
-      </div>
-      <div class="p-3">
-        <span style="font-size:15px;">nsectetur adipisicing elit, sed t esse cillum dolore eu fugia</span>
-        <a href="activity_detail.php" class="text-brown d-block link" style="text-align:right;">More Details</a>
-      </div>
-    </div>
-    <div class="activity">
-      <img src="/image/activity.jpg" alt="" class="actimg" width="100%" height="70%" style="object-fit:cover;">
-      <div class="text-light" style="margin-top:-130px; margin-left:20px;">
-        <div class="d-flex" style="height:100px; align-items: flex-end;">
-          <span style="font-size:20px;">lorefn kfsdkff isicing elit, sed do eiusmod tempor after  incididunt ut labore et dolore</span>
-        </div>
-        <span style="font-size:15px;">1 month & 3 days ago</span>
-      </div>
-      <div class="p-3">
-        <span style="font-size:15px;">Lorielit esse cillum dolore eu fugia</span>
-        <a href="activity_detail.php" class="text-brown d-block link" style="text-align:right;">More Details</a>
-      </div>
-    </div>
+  <div class="mt-5">
+    <a href="view/activity.php" class="btn text-brown float-end" style="font-size:15px; padding:10px;">Check More Activities >></a>
   </div>
-
 </div>
 
 <?php include '../footer.php'; ?>

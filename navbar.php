@@ -118,7 +118,7 @@
     ?>
     </div>
     <div class="col-2 buddhacontainer">
-      <img src="image/buddha2.png" alt="" width="80%" height="80%">
+      <img src="/image/buddha2.png" alt="" width="80%" height="80%">
     </div>
   </div>
 </div>

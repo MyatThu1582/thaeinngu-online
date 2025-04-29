@@ -49,14 +49,12 @@
 
 <div class="container mt-5 pt-5">
   <div class="d-flex">
-    <div class="col-10 me-3">
+    <div class="col-10 me-3 gallerytitle">
       <h3>သဲအင်းဂူကျောင်းတိုက်</h3>
       <p class="title-underline"></p>
     </div>
   </div>
-
-
-  <div class="row g-4">
+  <div class="row g-4 gallery">
     <?php $id = 1; ?>
     <?php foreach ($images as $image): ?>
       <div class="me-2 shadow-sm h-100 gallerydiv" data-bs-toggle="modal" data-bs-target="#example<?= $id; ?>Modal">
@@ -64,7 +62,7 @@
         <div class="image-text"><?php echo $image['name']; ?></div>
       </div>
 
-      <div class="modal fade modal-lg h-70 mt-3" id="example<?= $id; ?>Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade modal-lg h-70 mt-3 gallerymodal" id="example<?= $id; ?>Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-body">   
@@ -87,4 +85,4 @@
 
 
 <br><br><br>
-<?php include '../footer.php'; ?>
+<?php //include '../footer.php'; ?>

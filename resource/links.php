@@ -158,7 +158,7 @@
   padding-left: 20px;
 }
 .bannar{
-  background-image: url('../image/bannar2.png');
+  background-image: url('/image/bannar2.png');
   background-repeat: no-repeat;
   /* background-size: cover; */
   /* background-position: 100% 50%; */
@@ -175,7 +175,7 @@
 }
 .activity{
   cursor: pointer;
-  width: 33%;
+  /* width: 33%; */
   height: 350px;
   border-radius: 6px;
   box-shadow: 0px 8px 16px 0px rgba(94,0,0,0.3);
@@ -362,17 +362,6 @@ audio {
 .menubtn{
   display: none;
 }
-/* .dropdown-menu{
-  transition: 0.5s;
-  margin-left: -210px !important;
-} */
-/* .menudivforresponsive{
-  display: none;
-  position: absolute;
-  width: 100%;
-  margin-top: -20px !important;
-  background-color: white;
-} */
 .menudivforresponsive {
     position: fixed;
     top: 0;
@@ -404,8 +393,38 @@ audio {
     text-decoration: none;
     font-weight: 500;
   }
-
-
+  .biocontainer{
+    width: 100%;
+    height: 100%;
+  }
+  .introtextcontainer{
+    margin-top: 20% !important;
+    margin-left: 10% !important;
+  }
+  .introtext1{
+    font-size: 50px;
+    margin-bottom: 9px;
+    display: block;
+    font-weight: bold;
+    color: rgba(24, 0, 0, 0.8);
+  }
+  .introtext2{
+    font-size: 70px;
+    font-weight: bold;
+    color: rgba(24, 0, 0, 0.8);
+  }
+  .introcontainer{
+    margin-left: 100px;
+  }
+  .die{
+    text-align: center;
+  }
+  .die2{
+    padding-right: 100px;
+  }
+  .footercontainer{
+    margin: 0px !important;
+  }
 
 
 
@@ -435,7 +454,7 @@ audio {
     padding: 15px 0px;
   }
   .buddhacontainer{
-    width: 28% !important; 
+    width: 28% !important;
     text-align: center;
     /* background-color: blue; */
   }
@@ -479,18 +498,19 @@ audio {
     margin: 0px !important;
   }
   .home{
-    height: 450px;
+    height: 350px;
     padding: 0px !important;
   }
   .sayardaw{
     width: 35%;
     text-align: center;
-    background-color: red;
-    margin: 40px 10px !important;
-    padding: 0px !important;
+    display: none !important;
+    /* background-color: rgba(94,0,0,0.5); */
+    margin: 30px 0px !important;
+    padding: 20px !important;
   }
   .sayardawimg{
-    width: 70%;
+    width: 80%;
     margin-left: 20px;
   }
   .bio1{
@@ -500,7 +520,100 @@ audio {
     margin-top: 100px !important;
     padding: 0px !important;
   }
-  
+  .our_latest_acti{
+    margin:0px !important;
+  }
+  .main_activite{
+    width:100% !important;
+  }
+  .donatediv{
+    padding: 0px 30px !important;
+  }
+  .donate1{
+    padding: 0px !important;
+  }
+  .hand{
+    transform: rotateZ(180deg);
+  }
+  .btns{
+    width: 99%;
+  }
+  .biolinks{
+    padding: 6px 3px !important;
+    border: none;
+    background-color: transparent;
+    transition: 0.1s;
+  }
+  .gallery{
+    justify-content: center !important;
+  }
+  .gallerymodal{
+    top: 150px !important;
+  }
+  .gallerytitle{
+    margin-left: 30px !important;
+  }
+  .introtextcontainer{
+    margin: 0px !important;
+    padding-top: 35% !important;
+    padding-left: 10% !important;
+    width: 100% !important;
+  }
+  .introtext1{
+    font-size: 33px;
+  }
+  .introtext2{
+    font-size: 38px;
+  }
+  .name{
+    font-size: 13px;
+  }
+  .biotitle{
+    padding: 0px 30px !important;
+  }
+  .biovideo{
+    padding: 0px 30px !important;
+  }
+  .nopadding{
+    padding: 0px !important;
+  }
+  .biocontainer{
+    margin-top: 50px;
+    height: 400px !important;
+  }
+  .introcontainer{
+    margin: 0px !important;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    padding-top: 50px !important;
+  }
+  .speech{
+    margin-top: 50px !important;
+  }
+  .die2{
+    padding-right: 60px !important;
+  }
+  .activitycontainer{
+    padding: 0px 30px !important;
+  }
+  .activitytitle{
+    padding-left: 30px !important;
+  }
+  .footercontainer{
+    padding: 20px 30px !important;
+  }
+  .footer1{
+    margin: 0px !important;
+  }
+  .quicklinks{
+    display: none !important;
+  }
+  .footertext{
+    text-align: center !important;
+  }
+  .map{
+    padding: 0px 20px !important;
+  }
 }
 </style>
 <body>

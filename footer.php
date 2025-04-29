@@ -1,6 +1,6 @@
 <div class="footer text-light">
-  <div class="d-flex pt-5 pb-5 pe-5 ps-5">
-    <div class="col-4 ms-5">
+  <div class="row pt-5 pb-5 pe-5 ps-5 footercontainer">
+    <div class="col-4 ms-5 full footer1">
       <h4>Get In Touch</h4>
       <p class="footertitle-underline"></p>
       <div class="text">
@@ -26,7 +26,7 @@
         </p>
       </div>
     </div>
-    <div class="col-2 ms-5">
+    <div class="col-2 ms-5 full quicklinks">
       <h4>Quick Links</h4>
       <p class="footertitle-underline"></p>
       <div class="footer-links">
@@ -39,17 +39,17 @@
         <a href="#" class="f-links link">Cantact</a>
       </div>
     </div>
-    <div class="col-5 pe-5">
+    <div class="col-5 pe-5 full map">
       <h4>Address</h4>
       <p class="footertitle-underline"></p>
       <div class="mapswrapper"><iframe width="100%" height="250px" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=hmawbi%20thae%20inn%20gu&zoom=17&maptype=satellite"></iframe><a href="https://www.fluxaiimagegenerator.net">ai image</a><style>.mapswrapper{position:relative}.mapswrapper iframe{border:0;position:relative;z-index:2}.mapswrapper a{color:rgba(0,0,0,0);position:absolute;left:0;top:0;z-index:0}</style></div>
     </div>
   </div>
-  <div class="copyright pt-2 pb-3 d-flex">
-    <div class="col-9">
+  <div class="copyright pt-2 pb-3 row footercontainer">
+    <div class="col-9 full footertext">
       2024 ThaeInnGu - Myanmar. All right reserved.
     </div>
-    <div class="col-2 ms-3">
+    <div class="col-2 ms-3 full footertext">
       Design By <a href="https://protechmm.com/" class="link ms-2">ProTech</a>
     </div>
   </div>

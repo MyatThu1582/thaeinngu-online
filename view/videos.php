@@ -72,7 +72,7 @@ $audio_page_data = array_slice($video_datas, $start, $per_page);
           <div class="mb-2 fw-semibold text-brown d-flex align-items-center">
             <?php echo $id . " . " . $video['name']; ?>
           </div>
-          <video src="<?php echo $video['src']; ?>" controls width="100%" height="100%"></video>
+          <video src="<?php echo $video['src']; ?>" controls width="100%" height="85%"></video>
         </div>
       </div>
       <?php 
