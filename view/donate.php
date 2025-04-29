@@ -10,8 +10,8 @@
   </div>
 </div>
 <div class="container mt-5 pt-5">
-  <div class="d-flex">
-    <div class="col-6 pe-5">
+  <div class="row">
+    <div class="col-6 pe-5 donator bg-danger">
       <h4>Our Information</h4>
       <p class="title-underline"></p>
       <h5 class="mb-4">You can donate us with below informations</h5>
@@ -50,7 +50,7 @@
         </svg>
       </p>
     </div>
-    <div class="col-6">
+    <!-- <div class="col-6 donator_2">
       <h4>Donator Information</h4>
       <p class="title-underline"></p>
       <form class="" action="" method="post">
@@ -89,8 +89,8 @@
         </div>
         <button type="button" name="button" class="mt-4 donatebtn">Send</button>
       </form>
-    </div>
+    </div> -->
   </div>
 </div>
 <br><br><br>
-<?php include '../footer.php'; ?>
+<?php //include '../footer.php';// ?>

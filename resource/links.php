@@ -435,7 +435,7 @@ audio {
     padding: 15px 0px;
   }
   .buddhacontainer{
-    width: 28% !important; 
+    width: 28% !important;
     text-align: center;
     /* background-color: blue; */
   }
@@ -492,6 +492,22 @@ audio {
   .sayardawimg{
     width: 70%;
     margin-left: 20px;
+  }
+  .our_latest_acti{
+    margin:0px !important;
+  }
+  .main_activite{
+    width:100% !important;
+  }
+  .donator{
+    width:100%;
+    padding:20px;
+    margin-left:20px;
+  }
+  .donator_2{
+    width:100%;
+    padding:25px;
+    margin-left:-200px !important;
   }
 }
 </style>

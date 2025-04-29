@@ -13,9 +13,9 @@
 <!-- To Limit the length of the text on the image -->
 
 <div class="container mt-5 mb-5 pb-5 pt-5">
-  <h3>Our Latest Activities</h3>
+  <h3 class="our_latest_acti">Our Latest Activities</h3>
   <p class="title-underline"></p>
-  <div class="d-flex">
+  <div class="d-flex main_activite">
     <div class="activity">
         <img src="/image/activity5.jpg" alt="" class="actimg" width="100%" height="70%" style="object-fit:cover;">
         <div class="text-light" style="margin-top:-180px; margin-left:20px;">
