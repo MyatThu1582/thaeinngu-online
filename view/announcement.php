@@ -10,7 +10,7 @@
   </div>
 </div>
 
-<div class="container mt-5 pt-5">
+<div class="container mt-5 pt-5 nopadding">
   <h3>Latest Announcements</h3>
   <p class="title-underline"></p>
   <div class="d-flex mt-3 p-5 announce_div">

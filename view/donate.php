@@ -50,7 +50,7 @@
         </svg>
       </p>
     </div>
-    <div class="col-6 full">
+    <div class="col-6 full donate1">
       <h4>Donator Information</h4>
       <p class="title-underline"></p>
       <form class="" action="" method="post">

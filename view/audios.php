@@ -62,7 +62,7 @@ $audio_page_data = array_slice($audio_datas, $start, $per_page);
   </div>
 </div>
 
-<div class="container my-5 mt-5">
+<div class="container my-5 mt-5 nopadding">
 <h3 class="mb-4 text-brown">🎧 တရားတော် အသံဖိုင်များ</h3>
   <div class="row g-4">
     <?php $id = 1; ?>

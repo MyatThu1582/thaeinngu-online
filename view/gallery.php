@@ -14,7 +14,7 @@
   $images = [
       [
         'name' => 'အရိယာ ဓမ္မဗိမာန်တော်ကြီး',
-        'src' => '/image/Introduction.jpg',
+        'src' => '/image/introduction.jpg',
       ],
       [
         'name' => 'စံကျောင်းတော်ကြီး',

@@ -87,7 +87,7 @@
   <div class="row activitycontainer">
     <div class="col-4 p-3 full">
       <div class="activity">
-          <img src="/image/activity5.jpg" alt="" class="actimg" width="100%" height="70%" style="object-fit:cover;">
+          <img src="/image/activity5.jpg" alt="" class="actimg" style="object-fit:cover;">
           <div class="text-light" style="margin-top:-180px; margin-left:20px;">
             <div class="d-flex" style="align-items: flex-end; height:150px;">
               <span style="font-size:20px; display: block;">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</span>

@@ -14,7 +14,7 @@
     
     <!-- Video Section -->
     <div class="col-lg-6">
-      <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+      <div class="p-4 bg-white rounded-4 shadow-sm h-100 tayardawcontainer">
         <h3 class="mb-4 text-brown">📺 တရားတော် ဗီဒီယိုများ</h3>
         <?php 
           $video_datas = [
@@ -46,7 +46,7 @@
 
     <!-- Audio Section -->
     <div class="col-lg-6">
-      <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+      <div class="p-4 bg-white rounded-4 shadow-sm h-100 tayardawcontainer">
         <h3 class="mb-4 text-brown">🎧 တရားတော် အသံဖိုင်များ</h3>
         <?php 
           $audio_datas = [

@@ -187,6 +187,8 @@
 .actimg{
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
+  width: 100%;
+  height: 70%;
 }
 .title-underline{
   width: 200px;
@@ -414,7 +416,7 @@ audio {
     color: rgba(24, 0, 0, 0.8);
   }
   .introcontainer{
-    margin-left: 100px;
+    /* margin-left: 100px; */
   }
   .die{
     text-align: center;
@@ -429,9 +431,12 @@ audio {
 
 
 /* for responsive */
-@media screen and (max-width:800px){
+@media(max-width:1000px){
   .toshow{
     display: block !important;
+  }
+  .nomargin{
+    margin: 0px !important;
   }
   .full{
     width: 100% !important;
@@ -450,9 +455,9 @@ audio {
   }
   .maintitlecontainer{
     width: 55% !important;
-    /* background-color: red; */
     padding: 15px 0px;
   }
+
   .buddhacontainer{
     width: 28% !important;
     text-align: center;
@@ -471,15 +476,6 @@ audio {
   .menudivforresponsive{
     display: block;
   }
-
-  .bannar{
-    /* margin: 0px !important; */
-    width: 425px !important;
-    margin: 30px !important;
-  }
-  .intro{
-    padding: 20px;
-  }
   .intro1{
     margin-top: -30px;
     margin-bottom: 30px;
@@ -488,7 +484,6 @@ audio {
     padding: 20px !important;
   }
   .pricinple{
-    padding: 40px !important;
     margin-top: -50px !important;
   }
   .purpose{
@@ -513,9 +508,6 @@ audio {
     width: 80%;
     margin-left: 20px;
   }
-  .bio1{
-    padding: 0px 30px !important;
-  }
   .bio3{
     margin-top: 100px !important;
     padding: 0px !important;
@@ -526,9 +518,6 @@ audio {
   .main_activite{
     width:100% !important;
   }
-  .donatediv{
-    padding: 0px 30px !important;
-  }
   .donate1{
     padding: 0px !important;
   }
@@ -536,13 +525,11 @@ audio {
     transform: rotateZ(180deg);
   }
   .btns{
-    width: 99%;
+    width: 100%;
   }
-  .biolinks{
-    padding: 6px 3px !important;
-    border: none;
-    background-color: transparent;
-    transition: 0.1s;
+  .tayardawcontainer{
+    padding: 0px !important;
+    margin: 0px !important;
   }
   .gallery{
     justify-content: center !important;
@@ -550,13 +537,10 @@ audio {
   .gallerymodal{
     top: 150px !important;
   }
-  .gallerytitle{
-    margin-left: 30px !important;
-  }
   .introtextcontainer{
     margin: 0px !important;
-    padding-top: 35% !important;
-    padding-left: 10% !important;
+    padding-top: 18% !important;
+    padding-left: 15% !important;
     width: 100% !important;
   }
   .introtext1{
@@ -569,20 +553,20 @@ audio {
     font-size: 13px;
   }
   .biotitle{
-    padding: 0px 30px !important;
+    padding: 0px !important;
   }
   .biovideo{
-    padding: 0px 30px !important;
+    padding: 0px !important;
   }
   .nopadding{
     padding: 0px !important;
   }
   .biocontainer{
     margin-top: 50px;
-    height: 400px !important;
+    height: 620px !important;
   }
   .introcontainer{
-    margin: 0px !important;
+    margin-left: 130px !important;
     padding-left: 40px !important;
     padding-right: 40px !important;
     padding-top: 50px !important;
@@ -592,12 +576,6 @@ audio {
   }
   .die2{
     padding-right: 60px !important;
-  }
-  .activitycontainer{
-    padding: 0px 30px !important;
-  }
-  .activitytitle{
-    padding-left: 30px !important;
   }
   .footercontainer{
     padding: 20px 30px !important;
@@ -613,6 +591,12 @@ audio {
   }
   .map{
     padding: 0px 20px !important;
+  }
+  .activity{
+    height: 600px !important;
+  }
+  .actimg{
+    height: 75%;
   }
 }
 </style>

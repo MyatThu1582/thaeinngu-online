@@ -13,7 +13,7 @@
       <span class="header-text">အမြဲလင်း</span>
     </div>
   </div>
-<div class="" style="box-shadow: 0px 8px 16px 0px rgba(94,0,0,0.5); background-color: white;">
+<div class="navbarcontainer" style="box-shadow: 0px 8px 16px 0px rgba(94,0,0,0.5); background-color: white;">
   <div class="container d-flex nab-bar">
 
   <button class="btn btn-sm text-dark menubtn dropend" id="menuToggleBtn" style="border: none !important;" type="button"
