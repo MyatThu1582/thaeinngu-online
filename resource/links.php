@@ -416,7 +416,7 @@ audio {
     color: rgba(24, 0, 0, 0.8);
   }
   .introcontainer{
-    /* margin-left: 100px; */
+    margin-left: 100px;
   }
   .die{
     text-align: center;
@@ -427,7 +427,9 @@ audio {
   .footercontainer{
     margin: 0px !important;
   }
-
+  .introtayardaw{
+    margin-top: 100px !important;
+  }
 
 
 /* for responsive */

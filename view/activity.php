@@ -29,7 +29,7 @@
           </div>
           <div class="p-3">
             <span style="font-size:15px;">Lorem ipsum dolor sit amet, consect sed do eiu oop osmod tempor incididunt</span>
-            <a href="view/activity_detail.php" class="text-brown d-block link" style="text-align:right;">More Details</a>
+            <a href="activity_detail.php" class="text-brown d-block link" style="text-align:right;">More Details</a>
           </div>
       </div>
     </div>
@@ -44,7 +44,7 @@
         </div>
         <div class="p-3">
           <span style="font-size:15px;">nsectetur adipisicing elit, sed t esse cillum dolore eu fugia</span>
-          <a href="view/activity_detail.php" class="text-brown d-block link" style="text-align:right;">More Details</a>
+          <a href="activity_detail.php" class="text-brown d-block link" style="text-align:right;">More Details</a>
         </div>
       </div>
     </div>
@@ -59,7 +59,7 @@
         </div>
         <div class="p-3">
           <span style="font-size:15px;">Lorielit esse cillum dolore eu fugia</span>
-          <a href="view/activity_detail.php" class="text-brown d-block link" style="text-align:right;">More Details</a>
+          <a href="activity_detail.php" class="text-brown d-block link" style="text-align:right;">More Details</a>
         </div>
       </div>
     </div>
