@@ -146,7 +146,7 @@
   </div>
 </div>
 <!-- speech -->
-<!-- activity -->
+<!-- announcement -->
 <div class="container mt-5 mb-5 pb-5 pt-5">
   <div class="activitytitle">
     <h3>Our Latest Announcements</h3>
@@ -155,7 +155,7 @@
   <div class="row activitycontainer">
     <div class="col-4 p-3 full">
       <div class="activity">
-          <img src="image/announcement2.jpg" alt="" class="actimg" style="object-fit:cover;">
+          <img src="/image/announcement2.jpg" alt="" class="actimg" style="object-fit:cover;">
           <div class="text-light" style="margin-top:-180px; margin-left:20px;">
             <div class="d-flex" style="align-items: flex-end; height:150px;">
               <span style="font-size:20px; display: block;">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore</span>
@@ -170,7 +170,7 @@
     </div>
     <div class="col-4 p-3 full">
       <div class="activity">
-        <img src="image/announcement3.jpg" alt="" class="actimg" width="100%" height="70%" style="object-fit:cover;">
+        <img src="/image/announcement3.jpg" alt="" class="actimg" width="100%" height="70%" style="object-fit:cover;">
         <div class="text-light" style="margin-top:-130px; margin-left:20px;">
           <div class="d-flex" style="height:100px; align-items: flex-end;">
             <span style="font-size:20px;">isicing elit, sed do eiusmod tempor incididunt ut labore et dolore</span>
@@ -185,7 +185,7 @@
     </div>
     <div class="col-4 p-3 full">
       <div class="activity">
-        <img src="image/activity.jpg" alt="" class="actimg" width="100%" height="70%" style="object-fit:cover;">
+        <img src="/image/activity.jpg" alt="" class="actimg" width="100%" height="70%" style="object-fit:cover;">
         <div class="text-light" style="margin-top:-130px; margin-left:20px;">
           <div class="d-flex" style="height:100px; align-items: flex-end;">
             <span style="font-size:20px;">lorefn kfsdkff isicing elit, sed do eiusmod tempor after  incididunt ut labore et dolore</span>
@@ -203,5 +203,5 @@
     <a href="view/activity.php" class="btn text-brown float-end" style="font-size:15px; padding:10px;">Check More Activities >></a>
   </div>
 </div>
-<!-- activity -->
+<!-- announcement -->
 <?php include 'footer.php'; ?>
