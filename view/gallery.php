@@ -10,7 +10,7 @@
   </div>
 </div>
 
-<?php 
+<?php
   $images = [
       [
         'name' => 'အရိယာ ဓမ္မဗိမာန်တော်ကြီး',
@@ -65,15 +65,15 @@
       <div class="modal fade modal-lg h-70 mt-3 gallerymodal" id="example<?= $id; ?>Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
-            <div class="modal-body">   
+            <div class="modal-body">
                 <img class="rounded_gallery" class="rounded_gallery" class="rounded_gallery" class="rounded_gallery" src="<?php echo $image['src']; ?>" alt="" width="100%">
               </div>
             </div>
           </div>
         </div>
-      <?php 
+      <?php
       $id++;
-        endforeach; 
+        endforeach;
     ?>
   </div>
   <div class="ms-5 mt-4 float-end">

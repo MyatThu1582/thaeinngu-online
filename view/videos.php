@@ -75,9 +75,9 @@ $audio_page_data = array_slice($video_datas, $start, $per_page);
           <video src="<?php echo $video['src']; ?>" controls width="100%" height="85%"></video>
         </div>
       </div>
-      <?php 
+      <?php
       $id++;
-        endforeach; 
+        endforeach;
     ?>
   </div>
 

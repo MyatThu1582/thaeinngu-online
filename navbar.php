@@ -1,5 +1,6 @@
 <?php
-   include 'resource/links.php';
+session_start();
+include 'resource/links.php';
 ?>
 <div id="topsection"></div>
   <div class="d-flex ps-5 pe-5 text-light bg-brown headerdiv" style="position:sticky; top:0px; z-index:9999;">
@@ -33,7 +34,7 @@
       if ($page == 'index.php' || $page == 'login.php' || $page == 'register.php') {
     ?>
       <a href="index.php" class="main-title">သဲအင်းဂူ</a><span class="sub-title">ဗဟိုဌာနချုပ် (မှော်ဘီ )</span>
-    <?php 
+    <?php
       }else{
     ?>
       <a href="../index.php" class="main-title">သဲအင်းဂူ</a><span class="sub-title">ဗဟိုဌာနချုပ် (မှော်ဘီ )</span>
@@ -62,6 +63,7 @@
           <div class="dropdown-content mt-1">
             <a href="view/tayardaw.php" class="sub-links">တရားတော်များ</a>
             <a href="view/book.php" class="sub-links">စာအုပ်များ</a>
+            <a href="view/forums.php" class="sub-links">Forums</a>
           </div>
         </div>
 
@@ -77,7 +79,32 @@
 
         <a class="menu link" href="view/donate.php">Donate</a>
         <a class="menu link" href="view/contact.php">Contact</a>
+        <div class="dropdown">
+          <span class="dropbtn menu link">Account</span>
+          <div class="dropdown-content mt-1">
+            <!-- <?php
+            $link = $_SERVER['PHP_SELF'];
+            $linkary = explode('/',$link);
+            $page = end($linkary);
+            echo "<script>alert('$page');</script>";
+            ?> -->
+            <?php
+              if (!empty($_SESSION['user_id']) || !empty($_SESSION['username'])) {
+                ?>
+                <a href="logout.php" class="sub-links">Loguot</a>
+                <?php
+              }else {
+                ?>
+                <a href="login.php" class="sub-links">Login</a>
+                <a href="register.php" class="sub-links">Register</a>
+                <?php
+              }
+             ?>
+          </div>
+        </div>
+
       </div>
+
     <?php
     }else{
     ?>
@@ -97,6 +124,7 @@
         <div class="dropdown-content mt-1">
           <a href="tayardaw.php" class="sub-links">တရားတော်များ</a>
           <a href="book.php" class="sub-links">စာအုပ်များ</a>
+          <a href="forums.php" class="sub-links">Forums</a>
         </div>
       </div>
 
@@ -112,6 +140,24 @@
 
       <a class="menu link" href="donate.php">Donate</a>
       <a class="menu link" href="contact.php">Contact</a>
+      <div class="dropdown">
+        <span class="dropbtn menu link">Account</span>
+        <div class="dropdown-content mt-1">
+          <?php
+            if (!empty($_SESSION['user_id']) || !empty($_SESSION['username'])) {
+              ?>
+              <a href="logout.php" class="sub-links">Loguot</a>
+              <?php
+            }else {
+              ?>
+              <a href="../login.php" class="sub-links">Login</a>
+              <a href="../register.php" class="sub-links">Register</a>
+              <?php
+            }
+           ?>
+        </div>
+      </div>
+
     </div>
   <?php
   }
@@ -133,7 +179,7 @@
 
 <!-- for responsive -->
 <div class="collapse p-3 text-light" id="collapseExample" style="position: absolute; background-color: rgb(94,0,0); width: 100%;">
-  <?php 
+  <?php
     if ($page == 'index.php' || $page == 'login.php' || $page == 'register.php') {
   ?>
   <div class="dropdown">
@@ -150,6 +196,7 @@
     <div class="dropdown-content mt-1" style="position: absolute; left: 75px; top: -5px;">
       <a href="view/tayardaw.php" class="sub-links">တရားတော်များ</a>
       <a href="view/book.php" class="sub-links">စာအုပ်များ</a>
+      <a href="view/forums.php" class="sub-links">Forums</a>
     </div>
   </div><hr>
 
@@ -182,6 +229,7 @@
       <div class="dropdown-content mt-1" style="position: absolute; left: 75px; top: -5px;">
         <a href="tayardaw.php" class="sub-links">တရားတော်များ</a>
         <a href="book.php" class="sub-links">စာအုပ်များ</a>
+        <a href="forums.php" class="sub-links">Forums</a>
       </div>
     </div><hr>
 
@@ -196,9 +244,26 @@
     </div><hr>
 
     <a class="text-light link" href="donate.php">Donate</a><hr>
-    <a class="text-light link" href="contact.php">Contact</a>
+    <a class="text-light link" href="contact.php">Contact</a><hr>
+    <div class="dropdown">
+      <span class="text-light link" href="">Account</span>
+      <div class="dropdown-content mt-1">
+        <?php
+          if (!empty($_SESSION['user_id']) || !empty($_SESSION['username'])) {
+            ?>
+            <a href="logout.php" class="sub-links">Loguot</a>
+            <?php
+          }else {
+            ?>
+            <a href="../login.php" class="sub-links">Login</a>
+            <a href="../register.php" class="sub-links">Register</a>
+            <?php
+          }
+         ?>
+      </div>
+    </div>
+
       <?php
     }
   ?>
 </div>
-

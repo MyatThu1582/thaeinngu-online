@@ -1,4 +1,5 @@
 <?php include '../navbar.php'; ?>
+<!-- <?php echo "<script>alert('$page');</script>"; ?> -->
 <div class="container mt-5 bannar pt-5" style="height:200px;">
   <div class="float-end">
   <h2 class="mt-5 pt-0">Introduction</h2>

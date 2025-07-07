@@ -35,7 +35,7 @@ $audio_datas = [
     ['name' => '028.သတိပဌာန်တရား(၄)ပါးရှုကွက်', 'src' => 'https://ia800501.us.archive.org/13/items/028._20250423/028.%E1%80%9E%E1%80%90%E1%80%AD%E1%80%95%E1%80%8C%E1%80%AC%E1%80%94%E1%80%B9%E1%80%90%E1%80%9B%E1%80%AC%E1%80%B8%28%E1%81%84%29%E1%80%95%E1%80%AB%E1%80%B8%E1%80%9B%E1%82%88%E1%80%80%E1%80%BC%E1%80%80%E1%80%B9.mp3'],
     ['name' => '029.ကော့မှူးရှုကွက်(၁)', 'src' => 'https://ia601801.us.archive.org/9/items/029._20250423/029.%E1%80%B1%E1%80%80%E1%80%AC%E1%80%B7%E1%80%99%E1%80%BD%E1%80%B4%E1%80%B8%E1%80%9B%E1%82%88%E1%80%80%E1%80%BC%E1%80%80%E1%80%B9%28%E1%81%81%29.mp3'],
     ['name' => '030.ကော့မှူးရှုကွက်(၂)', 'src' => 'https://ia601404.us.archive.org/26/items/030._20250423/030.%E1%80%B1%E1%80%80%E1%80%AC%E1%80%B7%E1%80%99%E1%80%BD%E1%80%B4%E1%80%B8%E1%80%9B%E1%82%88%E1%80%80%E1%80%BC%E1%80%80%E1%80%B9%28%E1%81%82%29.mp3'],
-];
+  ];
 
 // Pagination setup
 $total_items = count($audio_datas);
@@ -78,9 +78,9 @@ $audio_page_data = array_slice($audio_datas, $start, $per_page);
           </audio>
         </div>
       </div>
-      <?php 
+      <?php
       $id++;
-        endforeach; 
+        endforeach;
     ?>
   </div>
 

@@ -430,6 +430,164 @@ audio {
   .introtayardaw{
     margin-top: 100px !important;
   }
+  .content_card{
+    border:none;
+    /* height:100p; */
+    box-shadow: 0px 8px 16px 0px rgba(94,0,0,0.4);
+   transition:0.1s;
+  }
+  .content_card:hover{
+      scale: 1.1;
+  }
+  .forums_btn{
+    border:2px solid  rgb(63,0,0);
+    padding:10px;
+    background-color: rgb(63,0,0);
+    color:white;
+    transition:0.5s;
+  }
+  .forums_btn:hover{
+    background: none;
+    color: rgb(63,0,0);
+    font-weight:bold;
+  }
+  .add_btn{
+      border:none;
+      background-color: rgb(63,0,0);
+      color:white;
+      width:100%;
+      padding:10px;
+      /* margin-left:80%; */
+      margin-top:-64px;
+      font-weight: bold;
+      border:2px solid  rgb(63,0,0);
+      transition:0.5s;
+      border-radius:10px;
+      margin-top:8px;
+  }
+  .add_btn:hover{
+      background:none;
+      border:2px solid  rgb(63,0,0);
+      color:rgb(63,0,0);
+  }
+  .forum_card{
+    box-shadow: 0px 8px 16px 0px rgba(94,0,0,0.4);
+    border-radius:10px;
+    margin-left:%;
+    transition:0.5s ;
+  }
+  .forum_card:hover{
+    scale: 1.1;
+  }
+  .forums_details_card{
+    box-shadow: 0px 8px 16px 0px rgba(94,0,0,0.4);
+    border-radius:10px;
+    margin-left:%;
+    transition:0.5s;
+  }
+  .forums_details{
+    border:none;
+    background-color: rgb(63,0,0);
+    color:white;
+    width:12%;
+    padding:10px;
+    margin-top:-64px;
+    font-weight: bold;
+    border:2px solid  rgb(63,0,0);
+    transition:0.5s;
+    border-radius:10px;
+    margin-top:8px;
+  }
+  .forums_details:hover{
+    background:none;
+    border:2px solid  rgb(63,0,0);
+    color:rgb(63,0,0);
+  }
+  .back_forums{
+    border:none;
+    background-color: rgb(63,0,0);
+    color:white;
+    width:25%;
+    padding:10px;
+    margin-top:-64px;
+    font-weight: bold;
+    border:2px solid  rgb(63,0,0);
+    transition:0.5s;
+    border-radius:10px;
+    margin-top:8px;
+  }
+  .back_forums:hover{
+    background:none;
+    border:2px solid  rgb(63,0,0);
+    color:rgb(63,0,0);
+  }
+
+  .forums_underline{
+    width: 100px;
+    height: 4px;
+    /* border-bottom: 3px solid red; */
+    background-color: rgb(94,0,0);
+    margin-bottom: 50px;
+  }
+  .comment_input{
+    height:50px;
+    width:79%;
+    padding:9px;
+    border:none;
+    outline:none;
+    border-bottom:2px solid  rgb(94,0,0);
+  }
+  .send_comment_btn{
+    border:none;
+    background-color: rgb(63,0,0);
+    color:white;
+    width:8%;
+    padding-top:9px;
+    padding-bottom:9px;
+    font-weight: bold;
+    border:2px solid  rgb(63,0,0);
+    transition:0.5s;
+    border-radius:10px;
+    margin-top:8px;
+  }
+  .send_comment_btn:hover{
+    background:none;
+    border:2px solid  rgb(63,0,0);
+    color:rgb(63,0,0);
+  }
+  .card {
+    width: 89%;
+    height: 350px;
+    border:none;
+    border-radius: 10px;
+    /* box-shadow: 0 2px 8px rgba(0,0,0,0.1); */
+    overflow: hidden;
+    background-color: #fff;
+    font-family: sans-serif;
+  }
+
+  .card-content {
+    height: 100%;
+    overflow-y: auto;
+    padding: 16px;
+  }
+
+  .item {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    width:100%;
+  }
+  .first_username{
+    background-color: rgb(63,0,0);
+    color:white;
+    width:30px;
+    border-radius:50px;
+    height:30px;
+    font-size:20px;
+  }
+
 
 
 /* for responsive */
