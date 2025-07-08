@@ -1,5 +1,5 @@
 <?php
-session_start();
+// session_start();
 include 'resource/links.php';
 ?>
 <div id="topsection"></div>

@@ -103,8 +103,6 @@
               $passwordError = 'Password cannot be empty';
             }
           }else {
-            print_r($_POST['email']);
-            die();
             $admin_login = $db->admin_login($_POST['email'], $_POST['password']);
           }
         }

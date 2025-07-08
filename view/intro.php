@@ -1,3 +1,4 @@
+<?php session_start();?>
 <?php include '../navbar.php'; ?>
 <!-- <?php echo "<script>alert('$page');</script>"; ?> -->
 <div class="container mt-5 bannar pt-5" style="height:200px;">

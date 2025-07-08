@@ -158,7 +158,7 @@
   padding-left: 20px;
 }
 .bannar{
-  background-image: url('/image/bannar2.png');
+  background-image: url('../image/bannar2.png');
   background-repeat: no-repeat;
   /* background-size: cover; */
   /* background-position: 100% 50%; */
@@ -587,6 +587,68 @@ audio {
     height:30px;
     font-size:20px;
   }
+.replt_input{
+  padding:5px;
+  border-radius:5px;
+}
+.replt_btn{
+  padding:5px 10px;
+  border:2px solid  rgb(63,0,0);
+  background-color: rgb(63,0,0);
+  color:white;
+  transition:0.5s;
+  border-radius:5px;
+}
+.replt_btn:hover{
+  background:none;
+  color: rgb(63,0,0);
+}
+/* .contact_design{
+  width:100%;
+  padding:10px;
+  border-radius:5px;
+  border:none;
+  border-left:2px solid  rgb(63,0,0);
+  border-top:2px solid  rgb(63,0,0);
+  outline:none;
+} */
+.contact_send_btn{
+  background-color: rgb(63,0,0);
+  padding:10px;
+  color:white;
+  width:100%;
+  font-size:18px;
+  border-radius:5px;
+  transition:0.5s;
+  font-weight: bold;
+  margin-top:30px;
+}
+.contact_send_btn:hover{
+  background:none;
+  color:black;
+}
+.contact_card_box{
+  background-color:white;
+  box-shadow: 0px 8px 16px 0px #333333;
+  border-radius:10px;
+  transition:0.2s;
+}
+.contact_card_box:hover{
+    scale: 1.1;
+}
+.icon{
+  margin-top:-10px;
+  transition:0.2s;
+}
+.icon:hover{
+  scale: 1.2;
+}
+.contact_photo{
+  transition:0.2s;
+}
+.contact_photo:hover{
+  scale: 1.1;
+}
 
 
 
@@ -757,6 +819,24 @@ audio {
   }
   .actimg{
     height: 75%;
+  }
+  .contact_us{
+    width:100%;
+    padding:25px;
+    }
+  .information{
+    margin-top:40%;
+    width:100%;
+  }
+  .content_card{
+    margin-left:20px;
+    margin-top:-50px;
+  }
+  .address_card{
+    margin-left:29% !important;
+  }
+  .p-tab{
+    margin-bottom:-10px;
   }
 }
 </style>

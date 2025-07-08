@@ -1,5 +1,5 @@
 <?php
-// session_start();
+session_start();
 
 include "../Admin/config/config.php";
 // include "Admin/config/config.php";
@@ -166,16 +166,17 @@ public function admin_login($email,$password)
   $stmt->bindValue(':email', $email);
   $stmt->execute();
   $user = $stmt->fetch(PDO::FETCH_ASSOC);
-
   if ($user) {
       if ($user['role'] == 1) {
+
         if (password_verify($password, $user['password'])) {
+          echo "<script>alert('SUCCESS');</script>";
           $_SESSION['user_id'] = $user['id'];
           $_SESSION['username'] = $user['name'];
           $_SESSION['role'] = 1;
           $_SESSION['logged_in'] = time();
 
-          header('Location: dashboard.php');
+          header('location: dashboard.php');
         }
       }else {
         echo "<script>alert(Your Not Admin);window.Location.href='login.php';</script>";
@@ -203,11 +204,22 @@ public function forums_select_data($id)
 
   global $pdo;
 
-  $stmtcmt = $pdo->prepare("SELECT * FROM comments WHERE forums_id=$id");
+  $stmtcmt = $pdo->prepare("SELECT * FROM comments WHERE forums_id=$id AND parent_id IS NULL");
   $stmtcmt->execute();
   $cmResult = $stmtcmt->fetchAll();
   return $cmResult;
   }
+
+  public function select_reply($parent_id,$id)
+  {
+
+    global $pdo;
+
+    $stmtrp = $pdo->prepare("SELECT * FROM comments WHERE forums_id=$id AND parent_id = $parent_id");
+    $stmtrp->execute();
+    $rpResult = $stmtrp->fetchAll();
+    return $rpResult;
+    }
 
   public function auResult()
   {
@@ -243,6 +255,22 @@ public function add_comment($comment)
 
     }
   }
+
+  public function add_reply($reply,$parent_id)
+  {
+
+    global $pdo;
+
+    $forumId = $_GET['id'];
+
+    $stmtreply = $pdo->prepare("INSERT INTO comments(content,author_id,forums_id,parent_id) VALUES (:content,:author_id,:forums_id,:parent_id)");
+    $reply_result = $stmtreply->execute(
+      array(':content'=>$reply, ':author_id'=>$_SESSION['user_id'], ':forums_id'=>$forumId, ':parent_id'=>$parent_id)
+    );
+    if ($reply_result) {
+      echo "<script>window.location.href='forums_details.php?id=" . $forumId . "';</script>";
+      }
+    }
 
   public function admin_forums_update($title,$description,$id)
   {

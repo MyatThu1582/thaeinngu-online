@@ -1,4 +1,7 @@
-<?php include '../navbar.php'; ?>
+<?php
+session_start();
+include '../navbar.php';
+ ?>
 <div class="container mt-5 bannar pt-5" style="height:200px;">
   <div class="float-end">
     <h2 class="mt-5 pt-0">တရားတော်များ</h2>
@@ -11,12 +14,12 @@
 </div>
 <div class="container my-5">
   <div class="row g-4">
-    
+
     <!-- Video Section -->
     <div class="col-lg-6">
       <div class="p-4 bg-white rounded-4 shadow-sm h-100 tayardawcontainer">
         <h3 class="mb-4 text-brown">📺 တရားတော် ဗီဒီယိုများ</h3>
-        <?php 
+        <?php
           $video_datas = [
             [
               'name' => 'Facebook 269560251844372 (720p)',
@@ -48,7 +51,7 @@
     <div class="col-lg-6">
       <div class="p-4 bg-white rounded-4 shadow-sm h-100 tayardawcontainer">
         <h3 class="mb-4 text-brown">🎧 တရားတော် အသံဖိုင်များ</h3>
-        <?php 
+        <?php
           $audio_datas = [
             ['name' => '001.ပရိကံ', 'src' => 'https://ia800206.us.archive.org/14/items/001._20250423/001.%E1%80%95%E1%80%9B%E1%80%AD%E1%80%80%E1%80%B6.mp3'],
             ['name' => '002.ဝေဒနာ တစ်လုံးတည်းသိ', 'src' => 'https://ia600705.us.archive.org/21/items/mp-3-160-k_20250423/_%E1%80%9E%E1%80%B2%E1%80%A1%E1%80%84%E1%80%BA%E1%80%B8%E1%80%82%E1%80%B0%E1%80%86%E1%80%9B%E1%80%AC%E1%80%90%E1%80%B1%E1%80%AC%E1%80%BA%E1%80%98%E1%80%AF%E1%80%9B%E1%80%AC%E1%80%B8%E1%80%80%E1%80%BC%E1%80%AE%E1%80%B8%20%E1%80%9D%E1%80%B1%E1%80%92%E1%80%94%E1%80%AC%20%E1%80%90%E1%80%85%E1%80%BA%E1%80%9C%E1%80%AF%E1%80%B6%E1%80%B8%E1%80%90%E1%80%8A%E1%80%BA%E1%80%B8%E1%80%9E%E1%80%AD%E1%80%A1%E1%80%9C%E1%80%AF%E1%80%95%E1%80%BA%E1%80%95%E1%80%B1%E1%80%B8%E1%80%90%E1%80%9B%E1%80%AC%E1%80%B8%E1%80%90%E1%80%B1%E1%80%AC%E1%80%BA------------%28MP3_160K%29.mp3'],

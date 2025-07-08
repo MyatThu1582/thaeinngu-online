@@ -1,4 +1,6 @@
-<?php include '../navbar.php'; ?>
+<?php
+session_start();
+include '../navbar.php'; ?>
 <div class="container mt-5 bannar pt-5" style="height:200px;">
   <div class="float-end">
   <h2 class="mt-5 pt-0">Activities</h2>

@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <?php include 'navbar.php'; ?>
 <?php include 'config/config.php'; ?>
 

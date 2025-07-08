@@ -1,6 +1,6 @@
-<?php include '../navbar.php'; ?>
 <?php include '../Controllers/query.ctr.php'; ?>
-<?php //include '../config/config.php'; ?>
+<?php include '../navbar.php'; ?>
+<?php// include '../config/config.php'; ?>
 
 <div class="container mt-5 bannar pt-5" style="height:200px;">
   <div class="float-end">
@@ -18,11 +18,16 @@
 
   $db = new Query();
 
-  $datas = $db->select('forums',$_GET['id']);
+  $datas = $db->select('forums', $_GET['id']);
   $cmResult = $db->forums_select_data($_GET['id']);
   $auResult = $db->auResult();
 
+  if (isset($_POST['replt_btn'])) {
+    $reply = $_POST['reply'];
+    $parent_id = $_POST['parent_id'];
 
+    $db->add_reply($reply, $parent_id);
+  }
 
   if ($_POST) {
     if (empty($_POST['comment'])) {
@@ -72,18 +77,29 @@
               <?php
                 foreach ($cmResult as $key => $value) {
                   $authorId = $value['author_id'];
+                  $comment_id = $value['id'];
                   $result = $db->select_user_table('users', $authorId);
                 ?>
-
                 <div class="d-flex">
                   <div class="item">
                     <div class=""></div>
                     <div class="ms-1"><b><?php echo $result['name']?></b></div>
                     <div style="margin-left:14px; margin-top:-30px; padding-top:30px;"><?php echo $value['content'];?></div>
-
+                    <hr>
+                    <div class="d-flex">
+                      <div class="ms-2"><b>Reply:</b></div>
+                    <?php
+                    $rpResult = $db->select_reply($comment_id, $_GET['id']);
+                      foreach ($rpResult as $key => $reply_value) {
+                        ?>
+                        <p class="ms-1"><?php echo $reply_value['content']; ?></p>
+                        <?php
+                      }
+                      ?>
+                    </div>
 
                     <div class="">
-                    <div style="padding-left:87%;  margin-top:-28px;">
+                    <div style="padding-left:87%;  margin-top:-84px;">
                       <svg style="margin-top:-3px;" xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-stopwatch" viewBox="0 0 16 16">
                         <path d="M8.5 5.6a.5.5 0 1 0-1 0v2.9h-3a.5.5 0 0 0 0 1H8a.5.5 0 0 0 .5-.5z"/>
                         <path d="M6.5 1A.5.5 0 0 1 7 .5h2a.5.5 0 0 1 0 1v.57c1.36.196 2.594.78 3.584 1.64l.012-.013.354-.354-.354-.353a.5.5 0 0 1 .707-.708l1.414 1.415a.5.5 0 1 1-.707.707l-.353-.354-.354.354-.013.012A7 7 0 1 1 7 2.071V1.5a.5.5 0 0 1-.5-.5M8 3a6 6 0 1 0 .001 12A6 6 0 0 0 8 3"/>
@@ -105,8 +121,19 @@
                          ?>
                        </div>
                      </div>
+
+                     <form class="" action="" method="post">
+
+                      <div class="" style="margin-top:30px; margin-left:72%;">
+                        <input type="hidden" name="parent_id" class="replt_input" value="<?php echo $comment_id;?>">
+                        <input type="text" name="reply" value="" class="replt_input" placeholder="Comment Reply...">
+                        <button type="submit" name="replt_btn" class="ms-2 replt_btn">Reply</button>
+                      </div>
+                    </form>
+
                   </div>
                 </div>
+
 
                 <?php
                }
@@ -135,7 +162,7 @@
                 <?php
               }else {
                 ?>
-                <span style="color:red;"><?php echo empty($commentError) ? '' : '*'.$commentError; ?></span>
+                <p style="color:red;"><?php echo empty($commentError) ? '' : '*'.$commentError; ?></p>
               <input type="text" name="comment" value="" class="comment_input" placeholder="Send Comment ...">
                   <span class="ms-3">
                     <button type="submit" name="button" class="send_comment_btn">
