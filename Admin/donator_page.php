@@ -139,7 +139,7 @@
 
       $db = new Query();
 
-      $datas = $db->selectAll('forums');
+      $datas = $db->selectAll('donate');
      ?>
 
      <div class="sidebar">
@@ -197,42 +197,10 @@
 
     <div class="row">
       <div class="col-6 mt-3">
-        <div class="header" style="font-size:25px; margin-left:280px; margin-top:20px; width:;">Forums-Listening</div>
+        <div class="header" style="font-size:25px; margin-left:280px; margin-top:20px; width:;">Donator Information-Listening</div>
       </div>
       <div class="col-4 mt-5">
         <!-- <button type="button" name="button" class="create_btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="margin-left:102%;">Create New Forums</button> -->
-      </div>
-    </div>
-
-
-
-    <div class="modal fade " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="margin-top:90px; margin-left:-5%;">
-      <div class="modal-dialog">
-        <div class="modal-content"  style="width:650px; border:3px solid rgb(63,0,0); height:;">
-          <div class="modal-header">
-            <h1 class="modal-title" id="staticBackdropLabel" style="font-size:30px; color:rgb(63,0,0);">Create New Forums</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-
-          <div class="modal-body">
-            <form class="" action="" method="post">
-
-            <div class="m-3 floating mt-2">
-              <label for="" style="font-size:18px;">Title</label><span style="color:red;" class="ms-2"><?php echo empty($titleError) ? '' : '*'.$titleError; ?></span>
-              <input type="text" name="title" value="" placeholder="Enter Your Title" class="mt-2 input form-control" style="height:50px; border:2px solid rgb(63,0,0);">
-            </div>
-
-            <div class="ms-3 me-3 mt-2 floating">
-              <label for="" style="font-size:18px;">Description</label><span style="color:red;" class="ms-2"><?php echo empty($descriptionError) ? '' : '*'.$descriptionError; ?></span>
-              <textarea name="description" rows="3" cols="80" placeholder="Enter Your Description" class="input form-control mt-2" style=" border:2px solid rgb(63,0,0);"></textarea>
-            </div>
-
-            <div class="ms-3 me-3 mb-3 floating mt-4">
-              <button type="submit" name="add_btn" class="add_btn">Add Forums</button>
-            </div>
-          </div>
-        </form>
-        </div>
       </div>
     </div>
 
@@ -242,10 +210,13 @@
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">Title</th>
-      <th scope="col">Description</th>
-      <th scope="col">Create_Time</th>
-      <th scope="col">Active</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Address</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Dontent_content</th>
+      <th scope="col">Amount</th>
+      <th scope="col">Message</th>
     </tr>
   </thead>
   <tbody>
@@ -255,23 +226,14 @@
         foreach ($datas as $value) {
      ?>
     <tr>
-      <td><?php echo $id;?></td>
-      <td><?php echo $value['title'];?></td>
-      <td><?php echo substr($value['description'],0,90);?>...</td>
-      <td><?php echo $value['created_at'];?></td>
-      <td>
-        <a href="admin_forum_update.php?id=<?php echo $value['id'];?>" type="button" name="button" class="update">
-          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-            <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-            <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
-          </svg>
-        </a>
-        <a href="‌admin_forum_delete.php?id=<?php echo $value['id'];?>" type="button" name="button" class="delete" onclick="return confirm('Are you sure you want to delete this item?');">
-          <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-trash3-fill" viewBox="0 0 16 16">
-            <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
-          </svg>
-        </a>
-      </td>
+      <td><?php echo $id; ?></td>
+      <td><?php echo $value['name'];?></td>
+      <td><?php echo $value['email']?></td>
+      <td><?php echo $value['address'];?></td>
+      <td><?php echo $value['phone']; ?></td>
+      <td><?php echo $value['dontent_content']; ?></td>
+      <td><?php echo $value['amount']; ?></td>
+      <td><?php echo $value['message']; ?></td>
     </tr>
     <?php
       $id++;

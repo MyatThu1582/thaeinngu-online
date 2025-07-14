@@ -142,17 +142,6 @@
     border:2px solid  rgb(63,0,0);
     color:rgb(63,0,0);
   }
-  .main_links {
-    height: 670px;
-    overflow-y: scroll;
-    padding: 10px;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-
-  .main_links::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
-  }
 </style>
 <body>
 
@@ -194,6 +183,10 @@
          <a href="dashboard.php"><span>🏠</span> Home</a>
          <a href="user_page.php"><span>👥</span> Users</a>
          <a href="forums_page.php"><span>🗨️</span> Forums</a>
+         <a href="activity_page.php"><span>🔄</span> Activity</a>
+         <a href="donator_page.php"><span>🌟</span> Donator Information</a>
+         <a href="information_page.php"><span>📢</span> Information</a>
+
          <a href="logout.php" onclick="return confirm('Are you sure you want to logout?');"><span>🔓</span> Logout</a>
        </div>
      </div>
@@ -237,7 +230,7 @@
     </div>
   </div>
 
-  <div class="container" style="width:800px; margin-left:-66%; margin-top:200px;">
+  <div class="container" style="width:800px; margin-left:-78%; margin-top:200px;">
 
   <form class="" action="" method="post">
   <div class="p-2" style=" border:2px solid rgb(63,0,0);  box-shadow:0px 15px 19px  rgb(63,0,0);">

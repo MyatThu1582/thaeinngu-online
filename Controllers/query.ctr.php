@@ -281,4 +281,81 @@ public function add_comment($comment)
     echo "<script>alert('Update is sussessfully');window.location.href='forums_page.php';</script>";
   }
 
+  public function admin_activity_add($title,$description,$image)
+  {
+    global $pdo;
+
+    $file = 'activityimage/'.($_FILES['image']['name']);
+    $imageType = pathinfo($file,PATHINFO_EXTENSION);
+
+    if ($imageType  != 'png' && $imageType != 'jpg' && $imageType != 'jpeg') {
+      echo "<script>alert('Image must be png,jpg,jpeg')</script>";
+    }else {
+      move_uploaded_file($_FILES['image']['tmp_name'], $file);
+      $stmt = $pdo->prepare("INSERT INTO activity (title,description,image) VALUES (:title,:description,:image)");
+      $result = $stmt->execute(
+        array(':title'=>$title, ':description'=>$description, ':image'=>$image)
+      );
+      if ($result) {
+        echo "<script>alert('Successfuly added');window.locction.href='activity_page.php'</script>";
+      }
+    }
+  }
+
+  public function admin_activity_update($title,$description,$image,$id){
+
+    global $pdo;
+
+    if ($_FILES['image']['name'] != null) {
+      $file = 'activityimage/'.($_FILES['image']['name']);
+      $imageType = pathinfo($file,PATHINFO_EXTENSION);
+
+      if ($imageType != 'png' && $imageType != 'jpg' && $imageType != 'jpeg') {
+        echo "<script>alert('Image must be png,jpg,jpeg')</script>";
+      }else {
+        $image = $_FILES['image']['name'];
+        move_uploaded_file($_FILES['image']['tmp_name'],$file);
+
+        $stmt = $pdo->prepare("UPDATE activity SET title='$title', description='$description', image='$image', WHERE id='$id'");
+        $result = $stmt->execute();
+        if ($result) {
+          echo "<script>alert('Successfuly Updated');window.location.href='activity_page.php'</script>";
+        }
+      }
+    }else {
+      $stmt = $pdo->prepare("UPDATE activity SET title='$title', description='$description' WHERE id='$id'");
+      $result = $stmt->execute();
+      if ($result) {
+        echo "<script>alert('Successfuly Updated');window.location.href='activity_page.php'</script>";
+      }
+    }
+  }
+
+  public function donate_add($name,$email,$address,$phone,$dontent_content,$amount,$message)
+  {
+    global $pdo;
+
+    $stmt = $pdo->prepare("INSERT INTO donate (name,email,address,phone,dontent_content,amount,message) VALUES (:name,:email,:address,:phone,:dontent_content,:amount,:message)");
+    $result = $stmt->execute(
+      array(':name'=>$name, ':email'=>$email, ':address'=>$address, ':phone'=>$phone, ':dontent_content'=>$dontent_content, ':amount'=>$amount, ':message'=>$message)
+    );
+    if ($result) {
+      echo "<script>alert('Successfuly added');window.locction.href='donator_page.php'</script>";
+    }
+  }
+
+  public function information_add($bank_acc_name,$acc_name,$phone_number)
+  {
+    global $pdo;
+
+    $stmt = $pdo->prepare("INSERT INTO information (bank_acc_name,acc_name,phone_number) VALUES (:bank_acc_name,:acc_name,:phone_number)");
+    $result = $stmt->execute(
+      array(':bank_acc_name'=>$bank_acc_name, ':acc_name'=>$acc_name, ':phone_number'=>$phone_number)
+    );
+    if ($result) {
+      echo "<script>alert('Successfuly added');window.locction.href='information_page.php'</script>";
+    }
+  }
+
+
 }

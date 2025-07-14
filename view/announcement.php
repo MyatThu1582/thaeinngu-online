@@ -29,7 +29,7 @@ include '../navbar.php';
       <p class="mt-3">Lorem ipsum dolor sit amet, consectetur ana aliqutation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
     <div class="col-4 pt-3" style="height:250px;">
-      <img src="/image/announcement2.jpg" alt="" width="100%" height="90%" style="object-fit:cover;">
+      <img src="../image/announcement2.jpg" alt="" width="100%" height="90%" style="object-fit:cover;">
     </div>
   </div>
 
@@ -46,7 +46,7 @@ include '../navbar.php';
       <p class="mt-3">Lorem ipsum dolor sit amet, consectetur ana aliqutation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
     <div class="col-4 pt-3" style="height:250px;">
-      <img src="/image/announcement3.jpg" alt="" width="100%" height="90%" style="object-fit:cover;">
+      <img src="../image/announcement3.jpg" alt="" width="100%" height="90%" style="object-fit:cover;">
     </div>
   </div>
 
@@ -65,7 +65,7 @@ include '../navbar.php';
       <p class="mt-3">Lorem ipsum dolor sit amet, consectetur ana aliqutation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
     <div class="col-4 pt-3" style="height:250px;">
-      <img src="/image/activity1.jpg" alt="" width="100%" height="90%" style="object-fit:cover;">
+      <img src="../image/activity1.jpg" alt="" width="100%" height="90%" style="object-fit:cover;">
     </div>
   </div>
 

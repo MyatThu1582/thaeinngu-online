@@ -71,7 +71,7 @@
   font-weight: bold;
 }
 .home{
-  height: 550px;
+  height: 600px;
   color: black;
   background-image: url('image/home.png');
   /* background-color: rgba(201, 200, 200, 0.5); */
@@ -238,31 +238,55 @@
 .announce_div:hover{
    transform: scale(1.02);
 }
-.gallerydiv{
-  position:relative;
-  overflow:hidden !important;
-  background-color: rgba(94,0,0,0.5);
-  padding:10px;
-  border-radius: 5px;
-  text-align: center;
-  width: 275px;
-  cursor: pointer;
+.gallery_card{
+  position: relative;
+  width: 320px;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
-.image-text{
-  width: 100%;
-  color: white;
-  transition: 0.5s;
-  background-color: brown;
-  padding:10px 20px;
+
+.gallery_card img {
+  width: 150%;
+  margin-left:-20px;
+  height: 100%;
+  object-fit: cover;
+  cursor:pointer;
+  transition: transform 0.5s ease;
+}
+
+.gallery_card:hover img {
+  transform: scale(0.5s);
+}
+
+.overlay {
   position: absolute;
-  bottom: -44px;
-  left: 0;
+  bottom: -100%;
+  left:0;
+  width: 100%;
+  height: 25%;
+  background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+  backdrop-filter: blur(3px);
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: center;
+  transition: bottom 0.5s ease;
 }
-.gallerydiv:hover .image-text{
-  bottom: 0px;
+
+.gallery_card:hover .overlay {
+  bottom: 0;
+  /* border:4px solid rgb(94,0,0); */
+  border-radius:10px;
 }
-.rounded_gallery{
-  border-radius: 4px;
+
+.overlay h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
 }
 video.custom-video {
   width: 100%;
@@ -477,7 +501,7 @@ audio {
     transition:0.5s ;
   }
   .forum_card:hover{
-    scale: 1.1;
+    transform: scale(1.02);
   }
   .forums_details_card{
     box-shadow: 0px 8px 16px 0px rgba(94,0,0,0.4);
@@ -649,7 +673,39 @@ audio {
 .contact_photo:hover{
   scale: 1.1;
 }
-
+.gallery_see_more_btn{
+  text-decoration: none;
+  background-color: rgb(63,0,0);
+  padding:12px;
+  color:white;
+  border:2px solid  rgb(63,0,0);
+  transition:0.5s;
+}
+.gallery_see_more_btn:hover{
+  background:none;
+  color: rgb(63,0,0);
+  border:2px solid  rgb(63,0,0);
+}
+.date{
+  padding:5px;
+  border-radius:10px;
+  background-color:  rgb(63,0,0);
+  color:white;
+}
+.activity_back_btn{
+  border:2px solid rgb(63,0,0);
+  background-color:rgb(63,0,0);
+  color:white;
+  padding:5px 20px;
+  margin-top:90px;
+  margin-left:89%;
+}
+.activity_image{
+  transition:0.5s;
+}
+.activity_image:hover{
+  scale: 1.1;
+}
 
 
 /* for responsive */

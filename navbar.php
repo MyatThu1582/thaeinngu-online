@@ -1,5 +1,4 @@
 <?php
-// session_start();
 include 'resource/links.php';
 ?>
 <div id="topsection"></div>
@@ -26,23 +25,23 @@ include 'resource/links.php';
   </button>
 
 
-  <div class="col-4 maintitlecontainer">
-    <?php
-      $link = $_SERVER['PHP_SELF'];
-      $linkary = explode('/',$link);
-      $page = end($linkary);
-      if ($page == 'index.php' || $page == 'login.php' || $page == 'register.php') {
-    ?>
-      <a href="index.php" class="main-title">သဲအင်းဂူ</a><span class="sub-title">ဗဟိုဌာနချုပ် (မှော်ဘီ )</span>
-    <?php
-      }else{
-    ?>
-      <a href="../index.php" class="main-title">သဲအင်းဂူ</a><span class="sub-title">ဗဟိုဌာနချုပ် (မှော်ဘီ )</span>
-    <?php
-      }
-    ?>
-    </div>
-    <div class="col-7 menucontainer">
+      <div class="col-3 me-5 maintitlecontainer">
+        <?php
+          $link = $_SERVER['PHP_SELF'];
+          $linkary = explode('/',$link);
+          $page = end($linkary);
+          if ($page == 'index.php' || $page == 'login.php' || $page == 'register.php') {
+        ?>
+          <a href="index.php" class="main-title">သဲအင်းဂူ</a><span class="sub-title">ဗဟိုဌာနချုပ် (မှော်ဘီ )</span>
+        <?php
+          }else{
+        ?>
+          <a href="../index.php" class="main-title">သဲအင်းဂူ</a><span class="sub-title">ဗဟိုဌာနချုပ် (မှော်ဘီ )</span>
+        <?php
+          }
+        ?>
+      </div>
+    <div class="ms-4 col-7 menucontainer">
       <?php
       if ($page == 'index.php' || $page == 'login.php' || $page == 'register.php') {
       ?>
@@ -163,9 +162,21 @@ include 'resource/links.php';
   }
     ?>
     </div>
+    <?php
+    if ($page == 'index.php' || $page == 'login.php' || $page == 'register.php') {
+    ?>
     <div class="col-2 buddhacontainer">
-      <img src="/image/buddha2.png" alt="" width="80%" height="80%">
+      <img src="image/buddha2.png" alt="" width="80%" height="80%">
     </div>
+    <?php
+    }else{
+    ?>
+    <div class="col-2 buddhacontainer">
+      <img src="../image/buddha2.png" alt="" width="80%" height="80%">
+    </div>
+    <?php
+    }
+    ?>
   </div>
 </div>
 <div class="m-5 hide" id="btn" style="position: fixed !important; bottom:10px; right:-10px; z-index: 999;">

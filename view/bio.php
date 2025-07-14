@@ -21,10 +21,10 @@ session_start();
           <span class="text-brown h5 mb-1 italic">ကျေးဇူးတော်ရှင်မူလသဲအင်းဂူဆရာတော်</span>
           <!-- <p class="title-underline"></p> -->
         </div>
-        <img src="/image/sayardaw2.jpg" alt="" class="hide" id="sayardaw1" width="100%" height="100%" style="object-fit:cover;">
-        <img src="/image/sayardaw.jfif" class="hide" alt="" id="sayardaw2" width="100%" height="100%" style="object-fit:cover;">
-        <img src="/image/sayardaw3.jpg" class="hide" alt="" id="sayardaw3" width="100%" height="100%" style="object-fit:cover;">
-        <img src="/image/sayardaw2.jpg" class="hide" alt="" id="sayardaw4" width="100%" height="100%" style="object-fit:cover;">
+        <img src="../image/sayardaw2.jpg" alt="" class="hide" id="sayardaw1" width="100%" height="100%" style="object-fit:cover;">
+        <img src="../image/sayardaw.jfif" class="hide" alt="" id="sayardaw2" width="100%" height="100%" style="object-fit:cover;">
+        <img src="../image/sayardaw3.jpg" class="hide" alt="" id="sayardaw3" width="100%" height="100%" style="object-fit:cover;">
+        <img src="../image/sayardaw2.jpg" class="hide" alt="" id="sayardaw4" width="100%" height="100%" style="object-fit:cover;">
       </div>
       <div class="col-8 ps-5 full bio3">
         <div class="btns mb-4 mt-4">

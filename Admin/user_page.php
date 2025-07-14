@@ -125,17 +125,6 @@
     color:rgb(63,0,0);
   }
 
-  .main_links {
-    height: 670px;
-    overflow-y: scroll;
-    padding: 10px;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-
-  .main_links::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera */
-  }
 </style>
 <body>
 
@@ -177,6 +166,9 @@
          <a href="dashboard.php"><span>🏠</span> Home</a>
          <a href="user_page.php"><span>👥</span> Users</a>
          <a href="forums_page.php"><span>🗨️</span> Forums</a>
+         <a href="activity_page.php"><span>🔄</span> Activity</a>
+         <a href="donator_page.php"><span>🌟</span> Donator Information</a>
+         <a href="information_page.php"><span>📢</span> Information</a>
          <a href="logout.php" onclick="return confirm('Are you sure you want to logout?');"><span>🔓</span> Logout</a>
        </div>
      </div>
@@ -276,15 +268,15 @@
 
     <div class="row">
       <div class="col-6 mt-3">
-        <div class="header" style="font-size:25px; margin-left:330px; margin-top:20px; width:;">Users-Listening</div>
+        <div class="header" style="font-size:25px; margin-left:270px; margin-top:20px; width:;">Users-Listening</div>
       </div>
       <div class="col-4 mt-5">
-        <button type="button" name="button" class="create_btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="margin-left:102%;">Create New User</button>
+        <button type="button" name="button" class="create_btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="margin-left:80%;">Create New User</button>
       </div>
     </div>
 
     <div class="container" style="margin-top:40px;">
-      <table class="table table-hover" style="margin-left:130px;">
+      <table class="table table-hover" style="margin-left:70px; width:95%;">
   <thead>
     <tr>
       <th scope="col">#</th>
@@ -330,13 +322,6 @@
      ?>
   </tbody>
 </table>
-<div class="" style="background-color:rgb(63,0,0); width:1500px; height:60px; margin-left:3px; margin-top:410.5px;">
-  <div class="d-flex" style="padding-left:5%; padding-top:1%;">
-    <p style="color:white;">2024 ThaeInnGu - Myanmar. All right reserved.</p>
-    <p style="color:white; padding-left:62%;">Design By</p>
-    <a href="https://protechmm.com/" style="padding-left:1%;">ProTech</a>
-  </div>
-</div>
     </div>
 
 

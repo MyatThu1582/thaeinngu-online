@@ -1,6 +1,8 @@
 <?php
-session_start();
-include '../navbar.php'; ?>
+include '../Controllers/query.ctr.php';
+include '../navbar.php';
+
+?>
 <div class="container mt-5 bannar pt-5" style="height:200px;">
   <div class="float-end">
   <h2 class="mt-5 pt-0">Donate</h2>
@@ -11,6 +13,27 @@ include '../navbar.php'; ?>
   <a href="donate.php" class="link text-brown">Donate</a>
   </div>
 </div>
+
+
+  <?php
+  $db = new Query();
+
+  $datas = $db->selectAll('information');
+
+
+  if ($_POST) {
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $address = $_POST['address'];
+    $phone = $_POST['phone'];
+    $dontent_content = $_POST['dontent_content'];
+    $amount = $_POST['amount'];
+    $message = $_POST['message'];
+
+    $donate = $db->donate_add($name,$email,$address,$phone,$dontent_content,$amount,$message);
+  }
+   ?>
+
 <div class="container mt-5 pt-5">
   <div class="row donatediv">
     <div class="col-6 pe-5 full donate1">
@@ -23,26 +46,17 @@ include '../navbar.php'; ?>
           <th style="color:rgb(94,0,0);">Account Number</th>
           <th style="color:rgb(94,0,0);">Ph. No</th>
         </tr>
-        <tr style="font-size:14px;">
-          <td>KANBAWZA BANK LTD</td>
-          <td>899324562765466</td>
-          <td>09-267397564</td>
-        </tr>
-        <tr style="font-size:14px;">
-          <td>YOMA BANK LTD</td>
-          <td>627689932455466</td>
-          <td>09-267397564</td>
-        </tr>
-        <tr style="font-size:14px;">
-          <td>CB BANK LTD</td>
-          <td>456276899325466</td>
-          <td>09-267397564</td>
-        </tr>
-        <tr style="font-size:14px;">
-          <td>WAVE PAY (U Mg Mg)</td>
-          <td>324562899765466</td>
-          <td>09-267397564</td>
-        </tr>
+        <?php
+          foreach ($datas as $value) {
+            ?>
+            <tr style="font-size:14px;">
+              <td><?php echo $value['bank_acc_name'];?></td>
+              <td><?php echo $value['acc_name'];?></td>
+              <td><?php echo $value['phone_number'];?></td>
+            </tr>
+            <?php
+          }
+         ?>
       </table>
       <h5 class="mt-5">We really appreciate your donation.</h5>
       <p>
@@ -58,38 +72,38 @@ include '../navbar.php'; ?>
       <form class="" action="" method="post">
         <div class="d-flex">
           <div class="col me-3">
-            <input type="text" name="" value="" class="donate" placeholder="Name">
+            <input type="text" name="name" value="" class="donate" placeholder="Name">
           </div>
           <div class="col">
-            <input type="text" name="" value="" class="donate" placeholder="Email">
+            <input type="email" name="email" value="" class="donate" placeholder="Email">
           </div>
         </div>
         <div class="d-flex mt-4">
           <div class="col-12">
-            <input type="text" name="" value="" class="donate" placeholder="Address">
+            <input type="text" name="address" value="" class="donate" placeholder="Address">
           </div>
         </div>
         <div class="d-flex mt-4">
           <div class="col-6 me-3">
-            <input type="text" name="" value="" class="donate" placeholder="Phone No.">
+            <input type="number" name="phone" value="" class="donate" placeholder="Phone No.">
           </div>
           <div class="col-3 me-3" style="width: 22% !important;">
-            <select class="donate" name="">
+            <select class="donate" name="dontent_content">
               <option value="">Select</option>
-              <option value="">1</option>
-              <option value="">2</option>
+              <option value="ဆွမ်းစရိတ်">ဆွမ်းစရိတ်</option>
+              <option value="ဆေးစရိတ်">ဆေးစရိတ်</option>
             </select>
           </div>
           <div class="col-3" style="width: 22% !important;">
-            <input type="number" name="" class="donate" placeholder="Amount">
+            <input type="number" name="amount" class="donate" placeholder="Amount">
           </div>
         </div>
         <div class="d-flex mt-4">
           <div class="col-12">
-            <textarea name="name" rows="4" cols="80" class="donate" placeholder="Message"></textarea>
+            <textarea name="message" rows="4" cols="80" class="donate" placeholder="Message"></textarea>
           </div>
         </div>
-        <button type="button" name="button" class="mt-4 donatebtn">Send</button>
+        <button type="submit" name="button" class="mt-4 donatebtn">Send</button>
       </form>
     </div>
   </div>
