@@ -3,6 +3,15 @@
 <head>
   <meta charset="utf-8"f>
   <title>ThaeInnGu - သဲအင်းဂူ</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WJZ7K81NHD"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-WJZ7K81NHD');
+  </script>
 
   <?php
   $link = $_SERVER['PHP_SELF'];
